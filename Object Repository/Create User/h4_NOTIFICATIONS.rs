@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h4_NOTIFICATIONS</name>
+   <tag></tag>
+   <elementGuidId>12fd2983-d4f8-4ba3-818d-cfd7e9bdbe82</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='user-notifications']/div/h4</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#user-notifications > div.settings-header > h4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>16d669ae-2877-4adb-8999-16b8126c26ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>NOTIFICATIONS </value>
+      <webElementGuid>183b3911-6b10-4b0d-8d91-1d78f6dcc672</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;user-notifications&quot;)/div[@class=&quot;settings-header&quot;]/h4[1]</value>
+      <webElementGuid>1aaef4f8-4baa-489e-85ab-555ae131d0e8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='user-notifications']/div/h4</value>
+      <webElementGuid>f7df4052-2db6-4921-9ff3-326c89fe1d82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Industry Benchmarks Access'])[1]/following::h4[1]</value>
+      <webElementGuid>4911e561-5369-4cd9-80ff-474b404f6192</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demo eCommerce Access'])[1]/following::h4[1]</value>
+      <webElementGuid>5dd10a45-4c17-4c9a-bf41-742363820417</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='System Generated Issues'])[1]/preceding::h4[1]</value>
+      <webElementGuid>112efa2c-109f-4af4-9f49-7f9addab8465</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Approved Domain White List Violations'])[1]/preceding::h4[1]</value>
+      <webElementGuid>d0dc335e-936f-4a28-b7df-a7e56c107aa2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='NOTIFICATIONS']/parent::*</value>
+      <webElementGuid>f91e871b-7d9d-448c-955d-e0451e3fe71c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/h4</value>
+      <webElementGuid>1fec744b-153e-4158-85e3-5ce9ffa4f1b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h4[(text() = 'NOTIFICATIONS ' or . = 'NOTIFICATIONS ')]</value>
+      <webElementGuid>4927e704-e6e1-4551-8d46-3c91145438d7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

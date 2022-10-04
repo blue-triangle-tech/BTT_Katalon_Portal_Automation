@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Marketing</name>
+   <tag></tag>
+   <elementGuidId>64474e6c-2ae6-4aa4-aee4-e05fd74dfe83</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;chartID_4&quot;][count(. | //*[(contains(text(), 'MARKETING') or contains(., 'MARKETING'))]) = count(//*[(contains(text(), 'MARKETING') or contains(., 'MARKETING'))])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;chartID_4&quot;]</value>
+      <webElementGuid>628ca65e-dde0-48cc-a2cc-c6e0c2865165</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>MARKETING</value>
+      <webElementGuid>36164ab1-ded4-4394-8e02-d38bf0df5c7a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Synthetic Performance Overview</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>665d19c1-f15b-441d-ab01-54d2df655be3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0494a721-28be-4d44-a57e-f59f8409d0d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6e890bed-8641-4926-980d-7369ef8b2eb8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b05d74c8-29a1-4b33-8d0d-e0eefbaf12d8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b3dff7d9-3be0-43fa-b026-6a3713faaffd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'giaesposito'</defaultValue>
+      <description></description>
+      <id>0494a721-28be-4d44-a57e-f59f8409d0d4</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'lululemon'</defaultValue>
+      <description></description>
+      <id>6e890bed-8641-4926-980d-7369ef8b2eb8</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'Last 3 hours'</defaultValue>
+      <description></description>
+      <id>b05d74c8-29a1-4b33-8d0d-e0eefbaf12d8</id>
+      <masked>false</masked>
+      <name>hours</name>
+   </variable>
+   <variable>
+      <defaultValue>'Last 90 days'</defaultValue>
+      <description></description>
+      <id>b3dff7d9-3be0-43fa-b026-6a3713faaffd</id>
+      <masked>false</masked>
+      <name>days</name>
+   </variable>
+</TestCaseEntity>

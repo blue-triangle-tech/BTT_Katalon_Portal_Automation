@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Error State Tracking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4de76ef2-c1e8-4b27-a2eb-d1c51d425931</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e1afd84f-e05f-498d-b989-6cd9e926daf7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'lululemon'</defaultValue>
+      <description></description>
+      <id>e1afd84f-e05f-498d-b989-6cd9e926daf7</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "817DE48669493ED781F153632B487ADA",
+  "keywordClasses": [
+    {
+      "name": "btt_portal.Logging",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

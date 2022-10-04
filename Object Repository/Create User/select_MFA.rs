@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_MFA</name>
+   <tag></tag>
+   <elementGuidId>7ac62116-78d6-4bfb-aea9-65a9216c3f94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='users-multifactorauthenabled']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#users-multifactorauthenabled</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>b7dab3c9-b0a3-41a0-845c-e4a118b95fd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>users-multifactorauthenabled</value>
+      <webElementGuid>d16d61ea-b91b-4c5b-a13c-4e91a55b4a43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control</value>
+      <webElementGuid>31aafa15-aed8-47b4-8f20-09d3b76f7ca6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Users[multiFactorAuthEnabled]</value>
+      <webElementGuid>17090574-40d9-43c3-8b7e-606c7ff61cf0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+No
+Yes
+</value>
+      <webElementGuid>2e59c863-ec49-4af4-a116-cef5b5ab0737</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;users-multifactorauthenabled&quot;)</value>
+      <webElementGuid>79a997e8-f12d-44be-b03d-6368adbe566b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='users-multifactorauthenabled']</value>
+      <webElementGuid>2c59f66b-c8a8-4aca-bc34-15bb423c5af3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='general-configuration']/div[14]/select</value>
+      <webElementGuid>ce76f809-5191-4fd2-8bd8-dd9c06d02d13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Multi Factor Auth Enabled'])[1]/following::select[1]</value>
+      <webElementGuid>b02c8c45-8b0c-4770-9290-31d77df1b0c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Landing Page'])[1]/following::select[2]</value>
+      <webElementGuid>064fb51c-1aeb-449d-b302-d81bf3ba09d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Theme'])[1]/preceding::select[1]</value>
+      <webElementGuid>7a54b256-86d7-463b-8dc8-07a99c6c033a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chart Type Preference'])[1]/preceding::select[2]</value>
+      <webElementGuid>b67d72c4-80b3-45d7-8710-32eeea258eeb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[14]/select</value>
+      <webElementGuid>a41e67d0-c99d-45fe-bf1f-9cfce15d9a80</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'users-multifactorauthenabled' and @name = 'Users[multiFactorAuthEnabled]' and (text() = '
+No
+Yes
+' or . = '
+No
+Yes
+')]</value>
+      <webElementGuid>0761e673-2817-43ba-8fb2-4af7ac78013c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

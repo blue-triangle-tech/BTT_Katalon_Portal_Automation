@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Executive Reports</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b85a84ee-48fb-4ff5-844f-e28b37bd9adf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9e6bab3f-d82b-4449-b37d-fd7c32290352</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'qa.PartCons1'</defaultValue>
+      <description></description>
+      <id>9e6bab3f-d82b-4449-b37d-fd7c32290352</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>
