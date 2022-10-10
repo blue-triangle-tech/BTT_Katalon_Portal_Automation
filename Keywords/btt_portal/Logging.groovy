@@ -52,4 +52,12 @@ public class Logging {
 		//invoking creatSheet() method and passing the name of the sheet to be created
 		HSSFSheet sheet = workbook.createSheet("page_title");
 	}
+
+	void addGlobalVariable(String name, def value) {
+		GroovyShell shell1 = new GroovyShell()
+		MetaClass mc = shell1.evaluate("internal.GlobalVariable").metaClass
+		String getterName = "get" + name.capitalize()
+		mc.'static'."$getterName" = { -> return value }
+		mc.'static'."$name" = value
+	}
 }

@@ -36,31 +36,30 @@ public class Login {
 	TestObject login_button = findTestObject('Object Repository/Page_Blue Triangle Sign In/button_Sign In')
 
 	TestObject verify_login_successful = findTestObject('Object Repository/Common Portal Elements/button_menu')
-	
-	
+
+
 
 	public void login(String username, String password) {
-		
+
 		try {
 			def x = DriverFactory.getCurrentWindowIndex()
-			if ( ( x != null ) && ( x >= 0 ) )
-			{
-			
-			println("Browser is already open")
-			
-		}}
+			if ( ( x != null ) && ( x >= 0 ) ) {
+
+				println("Browser is already open")
+			}
+		}
 		catch(Exception e) {
-		
-		WebUI.openBrowser(GlobalVariable.url)
-		WebUI.maximizeWindow()
 
-		WebUI.setText(input_username, username)
-		WebUI.setText(input_password, password)
+			WebUI.openBrowser(GlobalVariable.url)
+			WebUI.maximizeWindow()
 
-		WebUI.click(login_button)
+			WebUI.setText(input_username, username)
+			WebUI.setText(input_password, password)
 
-		WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
-	}
+			WebUI.click(login_button)
+
+			WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 	public void chrome_profile_login(String username, String password, String profile_path) {
 

@@ -15,5 +15,6 @@ kpi.verify_KPI_report()
 
 Logging console_errors = new Logging()
 List errors = console_errors.get_console_errors('SEVERE')
+console_errors.addGlobalVariable('kpi', errors)
 
 

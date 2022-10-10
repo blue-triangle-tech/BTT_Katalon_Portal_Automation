@@ -1,10 +1,7 @@
-import java.text.SimpleDateFormat
+import btt_portal.Logging
+import internal.GlobalVariable
 
-//def date = new Date()
-//sdf = new SimpleDateFormat("MMM dd yyyy")
-//String current_date = sdf.format(date)
-//println current_date
-//*
+Logging gv = new Logging()
+gv.addGlobalVariable('test', 'hello world')
 
-Date date = new Date()
-println date.toString()
+println GlobalVariable.test

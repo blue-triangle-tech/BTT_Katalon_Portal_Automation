@@ -1,34 +1,32 @@
-package btt_portal
+	package btt_portal
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import internal.GlobalVariable
+
+
 
 public class Synthetic_Monitoring {
 
 
 	public static performance_overview() {
+		
+		TestObject error_tracking = findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Error Tracking and Performance')
+		error_tracking.addProperty('text', ConditionType.CONTAINS, 'Error State')
+		error_tracking.addProperty('text', ConditionType.CONTAINS, 'Avg')
+		error_tracking.addProperty('text', ConditionType.CONTAINS, 'Last Measured')
+		
+		TestObject performance_breakdown = findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance Breakdown')
+		TestObject performance_geography = findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance By Geography')
+		TestObject overview_all_pages = findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance Overview For All Pages')
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Error Tracking and Performance'), 30)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance Breakdown'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance By Geography'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Overview/div_Performance Overview For All Pages'), 15)
+		WebUI.verifyElementPresent(error_tracking, 30)
+		WebUI.verifyElementPresent(performance_breakdown, 15)
+		WebUI.verifyElementPresent(performance_geography, 15)
+		WebUI.verifyElementPresent(overview_all_pages, 15)
 	}
 
 	public static performance_detail() {

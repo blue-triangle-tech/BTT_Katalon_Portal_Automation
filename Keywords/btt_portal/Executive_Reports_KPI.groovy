@@ -20,7 +20,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 public class Executive_Reports_KPI {
 
 
+
 	public static KPI_report_objects() {
+
+		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
+		String HM_text = WebUI.getText(HM)
+		String highlighted_metric = HM_text.minus('Highlighted Metric: ')
 
 		TestObject HM_widget = findTestObject('Object Repository/Executive KPI Report/Highlighted Metric')
 		TestObject MD_widget = findTestObject('Object Repository/Executive KPI Report/Metric Definitions')
@@ -29,12 +34,17 @@ public class Executive_Reports_KPI {
 		TestObject MT = findTestObject('Object Repository/Executive KPI Report/Metric Trends')
 		TestObject MST = findTestObject('Object Repository/Executive KPI Report/Metric Score and Trends')
 		TestObject TP = findTestObject('Object Repository/Executive KPI Report/Top X Pages')
-		TP.addProperty("text", ConditionType.CONTAINS, "s")
+
+		TP.addProperty("text", ConditionType.CONTAINS, "%")
+		TP.addProperty("text", ConditionType.CONTAINS, highlighted_metric)
+
 		TestObject CP = findTestObject('Object Repository/Executive KPI Report/Custom Pages')
-		CP.addProperty("text", ConditionType.CONTAINS, "s")
 		CP.addProperty("text", ConditionType.CONTAINS, "%")
+		CP.addProperty("text", ConditionType.CONTAINS, highlighted_metric)
+
 		TestObject TD = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution')
 		TD.addProperty("text", ConditionType.CONTAINS, "%")
+
 		TestObject AT = findTestObject('Object Repository/Executive KPI Report/Aggregate Trend')
 
 		List all_objects = [HM_widget, MD_widget, TC, RU, MT, MST, TP, CP, TD, AT]
@@ -76,21 +86,23 @@ public class Executive_Reports_KPI {
 
 	public static verify_top_cards() {
 	}
-	
+
 	public static verify_date() {
 		TestObject report_date_object = new TestObject("report date")
 		report_date_object.addProperty('id', ConditionType.EQUALS, 'executive-kpi-report-by-date-selector')
 		String report_date = WebUI.getText(report_date_object)
 		String current_date = report_date[13..18]
-		println current_date
-		
+
 		Date date = new Date()
 		String current_date1 = date.toString()
 		String current_date2 = current_date1[4..9]
-		println current_date2
-		
-		
-		
+
+		if (current_date == current_date2) {
+			println "A report has been generated for the current date"
+		}
+		else {
+			println "A report has not been generated today"
+		}
 	}
 
 	public static verify_rollup_table() {
@@ -149,42 +161,6 @@ public class Executive_Reports_KPI {
 			validate_object_highlights()
 			verify_not_present()
 			verify_date()
-		}
-	}
-
-	public static traffic_distribution() {
-		String red = "#DC2B2B"
-		String yellow = "#EAB120"
-		String green = "#55A330"
-
-		for (int x=1; x>=6; x++) {
-			String xpath = "/svg/g[6]/g[5]/rect["+x+"]"
-			TestObject td_g = new TestObject('traffic')
-			td_g.addProperty("text", ConditionType.CONTAINS, "Traffic Distribution")
-			td_g.addProperty("class", ConditionType.CONTAINS, "highcharts-point highcharts-null-point")
-			td_g.addProperty("fill", ConditionType.EQUALS, green)
-			td_g.addProperty("xpath", ConditionType.CONTAINS, xpath)
-			WebUI.verifyElementNotPresent(td_g, 10)
-		}
-
-		for (int x=1; x>=6; x++) {
-			String xpath = "/svg/g[6]/g[3]/rect["+x+"]"
-			TestObject td_y = new TestObject('traffic')
-			td_y.addProperty("text", ConditionType.CONTAINS, "Traffic Distribution")
-			td_y.addProperty("class", ConditionType.CONTAINS, "highcharts-point highcharts-null-point")
-			td_y.addProperty("fill", ConditionType.EQUALS, yellow)
-			td_y.addProperty("xpath", ConditionType.CONTAINS, xpath)
-			WebUI.verifyElementNotPresent(td_y, 10)
-		}
-
-		for (int x=1; x>=6; x++) {
-			String xpath = "/svg/g[6]/g[1]/rect["+x+"]"
-			TestObject td_r = new TestObject('traffic')
-			td_r.addProperty("text", ConditionType.CONTAINS, "Traffic Distribution")
-			td_r.addProperty("class", ConditionType.CONTAINS, "highcharts-point highcharts-null-point")
-			td_r.addProperty("fill", ConditionType.EQUALS, red)
-			td_r.addProperty("xpath", ConditionType.CONTAINS, xpath)
-			WebUI.verifyElementNotPresent(td_r, 10)
 		}
 	}
 }
