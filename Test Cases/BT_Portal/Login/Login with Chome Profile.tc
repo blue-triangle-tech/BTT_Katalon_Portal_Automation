@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login with Chome Profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2eccd15e-d190-4d75-8989-e18b63e6d859</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4611db85-727c-4c9c-8edb-6e1ef656e6bc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'qa.BTTCons1'</defaultValue>
+      <description></description>
+      <id>4611db85-727c-4c9c-8edb-6e1ef656e6bc</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7bd19a68-230a-47e9-b8d0-beae229f78ed</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>47696c83-a30f-4c89-a38d-8297a47362d8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'qa.vieweracct1'</defaultValue>
+      <description></description>
+      <id>47696c83-a30f-4c89-a38d-8297a47362d8</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

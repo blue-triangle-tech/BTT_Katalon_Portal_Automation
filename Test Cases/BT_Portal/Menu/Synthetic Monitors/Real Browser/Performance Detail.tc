@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Performance Detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>53fa5b73-771a-4e3f-81af-948560862abd</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6ae0f8d4-1a4e-40ec-941c-e2008b107319</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>567ffcfe-c89e-4175-94c7-bb0114d6d804</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1033ab97-daf0-42bd-a746-609a440d3d58</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'lululemon'</defaultValue>
+      <description></description>
+      <id>6ae0f8d4-1a4e-40ec-941c-e2008b107319</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'Last 3 Hours'</defaultValue>
+      <description></description>
+      <id>567ffcfe-c89e-4175-94c7-bb0114d6d804</id>
+      <masked>false</masked>
+      <name>hours</name>
+   </variable>
+   <variable>
+      <defaultValue>'Last 90 Days'</defaultValue>
+      <description></description>
+      <id>1033ab97-daf0-42bd-a746-609a440d3d58</id>
+      <masked>false</masked>
+      <name>days</name>
+   </variable>
+</TestCaseEntity>
