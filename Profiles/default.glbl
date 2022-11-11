@@ -9,9 +9,4 @@
       <initValue>'https://portal.bluetriangle.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>[]</initValue>
-      <name>console</name>
-   </GlobalVariableEntity>
 </GlobalVariableEntities>

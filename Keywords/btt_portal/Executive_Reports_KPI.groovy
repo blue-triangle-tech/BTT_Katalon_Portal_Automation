@@ -2,8 +2,6 @@ package btt_portal
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import java.text.SimpleDateFormat
-
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
@@ -11,6 +9,7 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -101,7 +100,8 @@ public class Executive_Reports_KPI {
 			println "A report has been generated for the current date"
 		}
 		else {
-			println "A report has not been generated today"
+			//println "A report has not been generated today"
+			KeywordUtil.markWarning("A report has not been generated today")
 		}
 	}
 
@@ -154,9 +154,7 @@ public class Executive_Reports_KPI {
 
 			List all_objects = KPI_report_objects()
 			for (object in all_objects) {
-				int x = 0
 				WebUI.verifyElementPresent(object, 10, FailureHandling.CONTINUE_ON_FAILURE)
-				//println WebUI.getText(object)
 			}
 			validate_object_highlights()
 			verify_not_present()

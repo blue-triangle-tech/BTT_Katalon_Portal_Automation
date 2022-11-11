@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>US2 API</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10.2.7.213/'</initValue>
+      <name>apiUrl</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -25,7 +25,7 @@
       <name>username</name>
    </variable>
    <variable>
-      <defaultValue>'Demo eCommerce Global'</defaultValue>
+      <defaultValue>'Kaiser Permanente'</defaultValue>
       <description></description>
       <id>b9395395-63f3-4482-928e-4adf78fb1d06</id>
       <masked>false</masked>

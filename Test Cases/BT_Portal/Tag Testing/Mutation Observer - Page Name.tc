@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Mutation Observer - Page Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70140202-05e6-4ecd-83a4-7463bd9bb5ef</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>758e8995-f6b3-43be-88cf-f3c3acd58a67</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef80dedc-15c7-424b-98f6-2659b1f3abbb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>49e228aa-309d-4ec6-bd55-b39f6f0e0713</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>af3e305b-67b1-47ba-9e5c-f1a0848f3049</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2590'</defaultValue>
+      <description></description>
+      <id>758e8995-f6b3-43be-88cf-f3c3acd58a67</id>
+      <masked>false</masked>
+      <name>site_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'bttinternalqa22151z'</defaultValue>
+      <description></description>
+      <id>ef80dedc-15c7-424b-98f6-2659b1f3abbb</id>
+      <masked>false</masked>
+      <name>site_prefix</name>
+   </variable>
+   <variable>
+      <defaultValue>'QA Test Mutation Observer Page'</defaultValue>
+      <description></description>
+      <id>49e228aa-309d-4ec6-bd55-b39f6f0e0713</id>
+      <masked>false</masked>
+      <name>mutation_name</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.bttcons4'</defaultValue>
+      <description></description>
+      <id>af3e305b-67b1-47ba-9e5c-f1a0848f3049</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

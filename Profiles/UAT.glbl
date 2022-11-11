@@ -9,4 +9,9 @@
       <initValue>'https://portaluat.bluetriangle.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'uatapi.bluetriangletech.com/bttapi/web/'</initValue>
+      <name>apiUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

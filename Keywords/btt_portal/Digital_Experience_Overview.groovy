@@ -18,7 +18,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 public class Digital_Experience_Overview {
 
 	public static verify_score_cards() {
-		
+
 
 		for (int x = 0; x<=4; x++) {
 			TestObject score_card = new TestObject("score cards")

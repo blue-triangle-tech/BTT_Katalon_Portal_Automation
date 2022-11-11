@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Dashboard Cloning</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>caca914b-1910-4e75-afb1-f5c37f99e7bf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>89236ab3-f08f-4f80-8f10-cfb608744f10</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'qa.vieweracct1'</defaultValue>
+      <description></description>
+      <id>89236ab3-f08f-4f80-8f10-cfb608744f10</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

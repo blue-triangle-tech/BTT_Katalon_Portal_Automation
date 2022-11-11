@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>p8</name>
+   <name>p8 qa01</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://portal-p8qa01.bluetriangletech.com/'</initValue>
       <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10.240.0.80/'</initValue>
+      <name>apiUrl</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

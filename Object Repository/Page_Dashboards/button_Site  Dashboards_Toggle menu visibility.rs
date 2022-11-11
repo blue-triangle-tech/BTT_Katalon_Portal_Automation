@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Site  Dashboards_Toggle menu visibility</name>
+   <tag></tag>
+   <elementGuidId>a6e9ba33-9c2c-49e6-93b0-ed0894a7fd75</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='toggle-navigation']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#toggle-navigation</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>bef401f7-7435-4c44-9943-5b983ce732ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>toggle-navigation</value>
+      <webElementGuid>2d14805d-0923-40a4-bf9c-f6f2351de738</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Toggle menu visibility</value>
+      <webElementGuid>e8ebec91-4a6b-4975-a760-a6983b7b887e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Toggle menu visibility</value>
+      <webElementGuid>d462a00f-f41e-464a-84a5-cc128bb7bceb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hamburger hamburger--3dy js-hamburger ctrl r-p pull-left bt-menu-toggle</value>
+      <webElementGuid>9763697e-ac2d-49d1-b58c-23d8b9a41e07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;toggle-navigation&quot;)</value>
+      <webElementGuid>d7ae3967-769b-43a1-ac1c-a1edec3ef892</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='toggle-navigation']</value>
+      <webElementGuid>e52e7605-b601-4edb-8a65-755a81c04ff1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='header']/div/button</value>
+      <webElementGuid>bcf7a940-c8de-4f6b-9ac2-a90fbf5b2328</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Site / Dashboards'])[1]/preceding::button[1]</value>
+      <webElementGuid>fa424b49-3ce1-4823-bf63-34314d66fc44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>3fab7e2b-7462-4562-b9e1-878c492bc56e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'toggle-navigation' and @name = 'Toggle menu visibility']</value>
+      <webElementGuid>20d9524d-e82e-4f17-b568-2b929d4f5eee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

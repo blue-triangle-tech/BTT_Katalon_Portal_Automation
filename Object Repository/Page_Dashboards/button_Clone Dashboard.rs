@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Create new group</name>
+   <name>button_Clone Dashboard</name>
    <tag></tag>
-   <elementGuidId>7fdc6acc-6940-46ac-917d-3cff2b34648f</elementGuidId>
+   <elementGuidId>5464de9b-f149-4610-8b3d-06f07b46189f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.col-xs-12 > a.pull-right</value>
+         <key>XPATH</key>
+         <value>//button[@id='save-dashboard-clones']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='notification-group-row']/div/a</value>
+         <key>CSS</key>
+         <value>#save-dashboard-clones</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,111 +21,111 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>03fd95aa-a2c5-40e1-9ab4-12a4716c16de</webElementGuid>
+      <value>button</value>
+      <webElementGuid>dc9bfe30-df1d-4891-95c4-8d9a4db6b857</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>type</name>
       <type>Main</type>
-      <value>/btportal/web/index.php?r=notification-group/index&amp;sid=409</value>
-      <webElementGuid>6262d231-6434-45b8-866e-cdf4ea568428</webElementGuid>
+      <value>button</value>
+      <webElementGuid>9b103b51-44af-476a-84c7-43f7cec44d21</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>save-dashboard-clones</value>
+      <webElementGuid>d681b06e-548d-43ad-a708-9760b0dbe49a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pull-right</value>
-      <webElementGuid>06ceb944-bdbe-44e9-8e88-d4acafe3b044</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>target</name>
-      <type>Main</type>
-      <value>_blank</value>
-      <webElementGuid>f3d28d83-232c-46d2-8757-83049df272a0</webElementGuid>
+      <value>btn btn-success pull-right</value>
+      <webElementGuid>73346f0b-f812-4c40-820e-61292852374c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Create new group</value>
-      <webElementGuid>5ea4a705-0af5-48db-b4d0-0c94dae7cd7a</webElementGuid>
+      <value>Clone Dashboard</value>
+      <webElementGuid>b327420b-bbd6-4a88-abc9-db30f8ffc3cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;notification-group-row&quot;)/div[@class=&quot;col-xs-12&quot;]/a[@class=&quot;pull-right&quot;]</value>
-      <webElementGuid>73706988-ca0e-4edc-a093-5fee460ce401</webElementGuid>
+      <value>id(&quot;save-dashboard-clones&quot;)</value>
+      <webElementGuid>30d7eb0a-4543-454d-b2f1-8738f1408bea</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='save-dashboard-clones']</value>
+      <webElementGuid>098524fa-5387-4d54-bb7d-23c0964d086d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='notification-group-row']/div/a</value>
-      <webElementGuid>07d93e9b-419a-49df-9e6c-8ed76e3e72ed</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
-      <type>Main</type>
-      <value>//a[contains(text(),'Create new group')]</value>
-      <webElementGuid>86915c99-be83-46fa-9015-2285e8fae3bb</webElementGuid>
+      <value>//div[@id='clone-dashboard-modal']/div/div/div[3]/button[2]</value>
+      <webElementGuid>e389431a-96f7-493d-af71-648da327f19b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::a[1]</value>
-      <webElementGuid>d919ad5e-32a7-4275-9ce8-86fc198a1ef4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
+      <webElementGuid>9e6986f0-608b-478c-8d29-59a354756b34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='-OR-'])[2]/preceding::a[1]</value>
-      <webElementGuid>10a9e6a3-edfb-4576-94ce-ed58f34f7616</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::button[2]</value>
+      <webElementGuid>c922619b-636d-4679-a3db-0f3fd987cca6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Create new group']/parent::*</value>
-      <webElementGuid>3209dc41-1016-45d9-8c0d-df22c9560cce</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='* Required'])[1]/preceding::button[3]</value>
+      <webElementGuid>474e5e27-781c-4b2c-a778-9df9f86496fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/btportal/web/index.php?r=notification-group/index&amp;sid=409')]</value>
-      <webElementGuid>0b110af4-d07b-41c8-98d2-45e6877f427e</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Clone Dashboard']/parent::*</value>
+      <webElementGuid>acf8e5f1-7cba-4873-9b82-79f1fb54e063</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/div/a</value>
-      <webElementGuid>885d7564-ba6f-4aa0-b6c6-831240125111</webElementGuid>
+      <value>//div[3]/button[2]</value>
+      <webElementGuid>43b4a60e-9513-469d-9061-1c47b264efeb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '/btportal/web/index.php?r=notification-group/index&amp;sid=409' and (text() = 'Create new group' or . = 'Create new group')]</value>
-      <webElementGuid>b3a20e62-0225-4665-a345-eb3c96b72a80</webElementGuid>
+      <value>//button[@type = 'button' and @id = 'save-dashboard-clones' and (text() = 'Clone Dashboard' or . = 'Clone Dashboard')]</value>
+      <webElementGuid>b0b7b100-cf62-4f3f-b5ba-159bd8ded9ac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

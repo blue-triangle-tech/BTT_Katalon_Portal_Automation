@@ -58,7 +58,7 @@ public class Login {
 
 			WebUI.click(login_button)
 
-			WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
+			//WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 	public void chrome_profile_login(String username, String password, String profile_path) {

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "2CA9CE1B015C74E7E86893ED3AB9C303",
+  "keywordFileContentHash": "5C3D55B02D471FB0FF04CB30D8FDAAF4",
   "keywordClasses": [
     {
       "name": "btt_portal.Executive_Reports_KPI",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

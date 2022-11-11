@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Create new group</name>
+   <tag></tag>
+   <elementGuidId>7fdc6acc-6940-46ac-917d-3cff2b34648f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/btportal/web/index.php?r=notification-group/index&amp;sid=409' and (text() = 'Create new group' or . = 'Create new group')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.col-xs-12 > a.pull-right</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='notification-group-row']/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b068cff9-9877-413a-8398-ad8b5fbd4190</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/btportal/web/index.php?r=notification-group/index&amp;sid=409</value>
+      <webElementGuid>e029ab96-c9c6-4f90-b700-a18ca1c0f7c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pull-right</value>
+      <webElementGuid>eebb563c-9be8-41b8-9c60-f73ef09972aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+      <webElementGuid>3e395c21-b0a9-4c0f-b0ba-4c77741122f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Create new group</value>
+      <webElementGuid>bed654d1-147b-41df-9bf7-366da0e43983</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;notification-group-row&quot;)/div[@class=&quot;col-xs-12&quot;]/a[@class=&quot;pull-right&quot;]</value>
+      <webElementGuid>8df264b8-59bf-4f74-89ce-659b2993991d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='notification-group-row']/div/a</value>
+      <webElementGuid>7132ca80-93a0-4075-ab90-3963afebef2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Create new group')]</value>
+      <webElementGuid>6251a05f-4b5b-4588-aaaf-23c8c0b97403</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::a[1]</value>
+      <webElementGuid>218c7f73-6a97-4c4b-81aa-3ffc9e344693</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-OR-'])[2]/preceding::a[1]</value>
+      <webElementGuid>9ed7f768-0ef8-4c0d-b8a2-75718e5b3c70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Create new group']/parent::*</value>
+      <webElementGuid>4e7c9d08-1b1a-451a-ab94-78cd1f249f44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/btportal/web/index.php?r=notification-group/index&amp;sid=409')]</value>
+      <webElementGuid>64baf23e-9240-4123-9f64-c69391b54d91</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/a</value>
+      <webElementGuid>eceafc0e-77dc-401d-a59e-882a15bb5aa5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/btportal/web/index.php?r=notification-group/index&amp;sid=409' and (text() = 'Create new group' or . = 'Create new group')]</value>
+      <webElementGuid>382eb682-e293-4384-96b2-66faa4fb5e29</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

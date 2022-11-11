@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Thank You Collection Page Variable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>edb33a14-97f3-43f3-9263-777840aebc82</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b30ab875-59da-4f5c-a8fc-9a0f7e8493d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>19aca728-5c13-4aff-b4b5-18f615d53a99</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6d29e93b-ca4b-493f-9c68-56cbd92fa962</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2590'</defaultValue>
+      <description></description>
+      <id>b30ab875-59da-4f5c-a8fc-9a0f7e8493d5</id>
+      <masked>false</masked>
+      <name>site_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'bttinternalqa22151z'</defaultValue>
+      <description></description>
+      <id>19aca728-5c13-4aff-b4b5-18f615d53a99</id>
+      <masked>false</masked>
+      <name>site_prefix</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.bttcons4'</defaultValue>
+      <description></description>
+      <id>6d29e93b-ca4b-493f-9c68-56cbd92fa962</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>
