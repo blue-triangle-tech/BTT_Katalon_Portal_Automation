@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "19BD8212930FF340706AC73C1489FCCB",
+  "keywordFileContentHash": "C88F0CB17FB10F29B0E2EAE6BA4B64FF",
   "keywordClasses": [
     {
       "name": "btt_portal.Digital_Experience_Overview",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

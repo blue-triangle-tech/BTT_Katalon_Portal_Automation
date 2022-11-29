@@ -30,7 +30,7 @@ public class Automated_Reports {
 		WebUI.setText(findTestObject('Object Repository/Automated Reports/Set Report Name'), report_name)
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Automated Reports/Report Interval Unit'), time_unit, true)
 		String text = WebUI.getAttribute(findTestObject('Object Repository/Automated Reports/Report Interval Unit'), 'value')
-		
+
 		println text
 		WebUI.setText(findTestObject('Object Repository/Automated Reports/Report Interval Period'), time_period)
 		String text2 = WebUI.getAttribute(findTestObject('Object Repository/Automated Reports/Report Interval Period'), 'value')
@@ -43,8 +43,7 @@ public class Automated_Reports {
 
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Create'))
 	}
-	
+
 	public static validate_report_row() {
-		
 	}
 }

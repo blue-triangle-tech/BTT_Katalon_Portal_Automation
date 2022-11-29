@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 public class Executive_Reports_KPI {
 
 
-
+// adds all the widgets in the KPI report to a list
 	public static KPI_report_objects() {
 
 		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
@@ -49,6 +49,7 @@ public class Executive_Reports_KPI {
 		List all_objects = [HM_widget, MD_widget, TC, RU, MT, MST, TP, CP, TD, AT]
 	}
 
+	// verifies that the highlighted metric is highlighted in widgets that contain this
 	public static validate_object_highlights() {
 
 		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
@@ -75,6 +76,7 @@ public class Executive_Reports_KPI {
 		}
 	}
 
+	// verifies the report does not have any null points, show NaN%, or show "No data to display" anywhere on the page
 	public static verify_not_present() {
 		TestObject null_point = new TestObject("null")
 		null_point.addProperty("class", ConditionType.EQUALS, "highcharts-point highcharts-null-point")
@@ -86,6 +88,7 @@ public class Executive_Reports_KPI {
 	public static verify_top_cards() {
 	}
 
+	// checks the date the report was generated, formats it, and compares it to the current date
 	public static verify_date() {
 		TestObject report_date_object = new TestObject("report date")
 		report_date_object.addProperty('id', ConditionType.EQUALS, 'executive-kpi-report-by-date-selector')
@@ -105,6 +108,7 @@ public class Executive_Reports_KPI {
 		}
 	}
 
+	//method in progress - will verify the rollup table contains data
 	public static verify_rollup_table() {
 
 		WebDriver driver = DriverFactory.getWebDriver()
@@ -114,6 +118,7 @@ public class Executive_Reports_KPI {
 		println rows_count
 	}
 
+	//method in progress - will validate report intervals and check that data matches
 	public static validate_interval() {
 
 		String report_interval = WebUI.getText(findTestObject('Object Repository/Executive KPI Report/Report Interval'))
@@ -127,6 +132,7 @@ public class Executive_Reports_KPI {
 		}
 	}
 
+	//method in progress - will be used to verify all bar colors are present
 	public static verify_TD_bar_colors() {
 
 		TestObject red = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution Red Bars')
@@ -140,6 +146,11 @@ public class Executive_Reports_KPI {
 		}
 	}
 
+	// Step 1: Selects a tab (interates through each tab on the report)
+	// Step 2: Verifies all widgets are present by using the KPI_report_objects() method to get the list of objects
+	// Step 3: Verified the highlighted metric is highlighted in select widgets with validate_object_highlights()
+	// Step 4: Verifies objects/text that should not be present are not found with verify_not_present() 
+	// Step 5: Verifies whether a report has been generated for the current date with verify_date()
 	public static verify_KPI_report() {
 
 		TestObject mobile_tab = findTestObject('Object Repository/Executive KPI Report/Mobile Tab')
