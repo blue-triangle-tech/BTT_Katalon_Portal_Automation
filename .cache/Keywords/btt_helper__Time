@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "F90101AB0365DF006DEE3FA3E1FB0C31",
+  "keywordFileContentHash": "0B574291E3BC7E8086AAADEC61E05C32",
   "keywordClasses": [
     {
       "name": "btt_helper.Time",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
