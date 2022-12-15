@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>reports</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>056f0cd3-72b4-4895-bc2b-dd0ffc582f06</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>da430029-20a8-42fa-8b05-ded8361e3a5d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'performance'</defaultValue>
+      <description></description>
+      <id>da430029-20a8-42fa-8b05-ded8361e3a5d</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>get email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efe7b27c-2679-4887-a63b-7e734073392e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>65714e35-45e9-42ed-a599-c1d8cde8a2a0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'performance'</defaultValue>
+      <description></description>
+      <id>65714e35-45e9-42ed-a599-c1d8cde8a2a0</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
+</TestCaseEntity>

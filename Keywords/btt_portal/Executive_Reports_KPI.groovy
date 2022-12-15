@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 public class Executive_Reports_KPI {
 
 
-// adds all the widgets in the KPI report to a list
+	// adds all the widgets in the KPI report to a list
 	public static KPI_report_objects() {
 
 		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
@@ -149,7 +149,7 @@ public class Executive_Reports_KPI {
 	// Step 1: Selects a tab (interates through each tab on the report)
 	// Step 2: Verifies all widgets are present by using the KPI_report_objects() method to get the list of objects
 	// Step 3: Verified the highlighted metric is highlighted in select widgets with validate_object_highlights()
-	// Step 4: Verifies objects/text that should not be present are not found with verify_not_present() 
+	// Step 4: Verifies objects/text that should not be present are not found with verify_not_present()
 	// Step 5: Verifies whether a report has been generated for the current date with verify_date()
 	public static verify_KPI_report() {
 
