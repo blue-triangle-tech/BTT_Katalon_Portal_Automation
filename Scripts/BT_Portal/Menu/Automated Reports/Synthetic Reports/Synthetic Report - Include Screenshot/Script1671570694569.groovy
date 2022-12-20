@@ -27,7 +27,7 @@ report_names.add(report_name)
 
 Automated_Reports report = new Automated_Reports()
 report.select_automated_report('synthetic-reports-type', report_type.getValue(2, row))
-report.report_settings(report_name, report_name + " for: " + site, '7', 'hours', 'No')
+report.report_settings(report_name, report_name + " for: " + site, '7', 'hours', 'Yes')
 report.create_report()
 report.generate_report(report_name)
 }

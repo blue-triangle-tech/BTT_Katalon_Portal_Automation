@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Synthetic Report</name>
+   <name>Real User Report - Include Screenshot</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ac7ae45b-0ed7-4c3d-a4f5-043672ba6154</testCaseGuid>
+   <testCaseGuid>b952003f-59fb-4798-bb33-867f380a7efe</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a990b06d-ede3-463a-bdbb-8e1419aac19c</variableId>
+      <variableId>edc4b2ec-f998-4b5f-9ffb-e5440685faf3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3e05e9cd-c209-46bd-8615-6f305dfb0105</variableId>
+      <variableId>906567e3-9064-4bb1-ac26-cc96ba1a1960</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'GDC Test Site 1'</defaultValue>
       <description></description>
-      <id>a990b06d-ede3-463a-bdbb-8e1419aac19c</id>
+      <id>edc4b2ec-f998-4b5f-9ffb-e5440685faf3</id>
       <masked>false</masked>
       <name>site</name>
    </variable>
    <variable>
       <defaultValue>'qa.dptadmin1'</defaultValue>
       <description></description>
-      <id>3e05e9cd-c209-46bd-8615-6f305dfb0105</id>
+      <id>906567e3-9064-4bb1-ac26-cc96ba1a1960</id>
       <masked>false</masked>
       <name>username</name>
    </variable>

@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fe7b1022-85c2-4ea8-b137-96bec6bc3d75</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8c9c75d5-783c-438e-8852-bc0d5a263783</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1d84e0c6-3128-4c8c-abaa-24a72092aaf9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>8c9c75d5-783c-438e-8852-bc0d5a263783</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>1d84e0c6-3128-4c8c-abaa-24a72092aaf9</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
 </TestCaseEntity>

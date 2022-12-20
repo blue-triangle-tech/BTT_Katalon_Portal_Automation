@@ -18,18 +18,20 @@ int report_row = report_type.getRowNumbers()
 
 List report_names = []
 
-for (int row = 1; row <=12; row++) {
+for (int row = 1; row <=report_row; row++) {
 		
 Time timestamp = new Time()
 String time = timestamp.current_time()
-report_name = "Synthetic " + report_type.getValue(2, row)+time
+report_name = "Real User " + report_type.getValue(1, row)+time
+
 report_names.add(report_name)
 
 Automated_Reports report = new Automated_Reports()
-report.select_automated_report('synthetic-reports-type', report_type.getValue(2, row))
-report.report_settings(report_name, report_name + " for: " + site, '7', 'hours', 'No')
+report.select_automated_report('real-user-reports-type', report_type.getValue(1, row))
+report.report_settings(report_name, report_name + " for: " + site, '7', 'hours', 'Yes')
 report.create_report()
 report.generate_report(report_name)
+
 }
 
 for (name in report_names) {
