@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Real User Report - Traffic Segment Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>60b76022-115c-4874-a370-915021bae875</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5440c05f-6c02-40fd-b68a-f9cf131d569a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cc79f29c-94e4-428e-a23b-79c061d26423</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>5440c05f-6c02-40fd-b68a-f9cf131d569a</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>cc79f29c-94e4-428e-a23b-79c061d26423</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

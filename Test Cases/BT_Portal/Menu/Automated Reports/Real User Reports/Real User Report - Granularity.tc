@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Real User Report - Granularity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ad4e19c-fac0-48d1-b060-b592b23ba3c8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ff1772ba-5b92-4183-824b-ad6709ea29d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>872dc929-ca2f-4a55-9359-ba08b02dc660</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b0e8b3a0-51d2-4950-8d9e-e88754d942b5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>ff1772ba-5b92-4183-824b-ad6709ea29d5</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>872dc929-ca2f-4a55-9359-ba08b02dc660</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'product'</defaultValue>
+      <description></description>
+      <id>b0e8b3a0-51d2-4950-8d9e-e88754d942b5</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
+</TestCaseEntity>

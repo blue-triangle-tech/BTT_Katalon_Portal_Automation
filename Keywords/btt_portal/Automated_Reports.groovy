@@ -1,7 +1,9 @@
 package btt_portal
 
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.apache.commons.lang3.StringUtils
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
@@ -11,6 +13,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -112,8 +115,8 @@ public class Automated_Reports {
 
 	public static get_token() {
 
-		String body = "client_id="+System.getenv('client_id')+"&client_secret="+System.getenv('client_secret')+"&grant_type=client_credentials&scope=https://graph.microsoft.com/.default"
-		String endpoint = "https://login.microsoftonline.com/"+System.getenv('tenant_id')+"/oauth2/v2.0/token"
+		String body = "client_id="+System.getenv('client_id')+"&client_secret="+System.getenv('client_secret')+"&grant_type=password&resource=https://graph.microsoft.com&username="+System.getenv('automation_email')+"&password="+System.getenv('automation_email_pass')
+		String endpoint = "https://login.microsoftonline.com/"+System.getenv('tenant_id')+"/oauth2/token"
 		String request_method = "POST"
 
 		HttpTextBodyContent httpBodyContent = new HttpTextBodyContent(body);
@@ -126,41 +129,80 @@ public class Automated_Reports {
 		ResponseObject token_response = WS.sendRequest(token)
 		String token_text = token_response.getResponseBodyContent()
 
-		JsonSlurper slurper = new JsonSlurper()
-		Map parsedJson = slurper.parseText(token_text)
-
-		String access_token = parsedJson.get("access_token")
+		String access_token = StringUtils.substringBetween(token_text, '"access_token":"', '","refresh_token":')
 		return access_token
 	}
 
+	public static report_email_request(String subject_line) {
 
-	public static verify_report_email(String report_name) {
+		String subject_format = subject_line.replaceAll(' ', '+')
+		String subject_format_final = subject_format.replaceAll(':', '%3a')
+		String subject_endpoint = 'https://graph.microsoft.com/v1.0/me/messages?%24search=%22'+subject_format_final+'%22'
 
-		RequestObject get_email = findTestObject('Object Repository/Microsoft Graph/Get Email')
+		String access_token = "Bearer " + get_token()
+
+		RequestObject get_email = new RequestObject('get email')
+		get_email.setRestUrl(subject_endpoint)
+		get_email.setRestRequestMethod('GET')
+
+		List<TestObjectProperty> headerProperties = get_email.getHttpHeaderProperties()
+		TestObjectProperty authorizationProperty = new TestObjectProperty("Authorization", ConditionType.EQUALS, access_token, true)
+		headerProperties.add(authorizationProperty)
+		get_email.setHttpHeaderProperties(headerProperties)
 
 		ResponseObject respObj = WS.sendRequest(get_email)
 		String email_text = respObj.getResponseBodyContent()
 
-		List missing_emails = []
+		JsonSlurper slurper = new JsonSlurper()
+		Map parsedJson = slurper.parseText(email_text)
 
+		return parsedJson
+	}
 
-		if (email_text.contains(report_name)) {
-			println report_name + " email has been found."
+	public static open_report_link(String subject_line) {
+
+		Map parsedJson = report_email_request(subject_line)
+
+		String subject = parsedJson.value.subject[0]
+
+		if (subject == subject_line) {
+
+			String body = parsedJson.value.body[0]
+			String link = StringUtils.substringBetween(body,'<a href="','">View Report:');
+			WebUI.navigateToUrl(link)
+			KeywordUtil.markPassed(subject_line + " email has been found.")
+
+			return "Email Found"
 		}
-		else {
-			missing_emails.add(report_name)
-		}
-		for (email in missing_emails) {
-			WebUI.delay(10)
-			ResponseObject respObj1 = WS.sendRequest(get_email)
-			String email_text1 = respObj1.getResponseBodyContent()
-			if (email_text1.contains(report_name)) {
+		KeywordUtil.markFailed(subject_line + " email has not been found.")
+		return "Email not found"
+	}
 
-				println report_name + " email has been found on the 2nd check."
+	public static verify_report_contents(String subject_line, String report_name, int row) {
+
+		String email_status = open_report_link(subject_line)
+
+		if (email_status == "Email Found") {
+
+			WebUI.verifyTextPresent(report_name, true)
+			WebUI.verifyTextNotPresent('No data to display', true)
+
+			String report_contents = findTestData('Data Files/Report Types').getValue(2, row)
+
+			TestObject report_table = new TestObject('report table or graph')
+			report_table.addProperty('id', ConditionType.EQUALS, report_contents)
+
+			if (WebUI.verifyElementPresent(report_table, 10)) {
+				KeywordUtil.markPassed(subject_line +' contains the correct contents')
+				return "Report generation passed"
 			}
+
 			else {
-				KeywordUtil.markWarning("No email has been found for " + report_name)
+				KeywordUtil.markFailed(subject_line + 'does not contain the correct contents.')
+				return "Report generation failed"
 			}
 		}
+		KeywordUtil.markFailed(subject_line +" email has not been found so there are no contents to verify.")
+		return "Email generation failed"
 	}
 }
