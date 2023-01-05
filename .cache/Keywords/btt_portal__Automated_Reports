@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "0E1EB7B95CEE85A59D87352D56E363BF",
+  "keywordFileContentHash": "F794166CB745A20A67A5D35DCF71017E",
   "keywordClasses": [
     {
       "name": "btt_portal.Automated_Reports",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

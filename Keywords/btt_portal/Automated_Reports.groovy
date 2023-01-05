@@ -25,8 +25,25 @@ import groovy.json.JsonSlurper
 
 
 public class Automated_Reports {
+	
+	//***************************************************************************
+	 // Function Name: select_automated_report
+	 //
+	 // Function Overview: selects the report data type (rum vs. synth) and selects the report type
+	 //
+	 // Function Input Variable(s): 
+	 //
+	 // 	report_data_type - The "ID" property of the object used to select a rum or synthetic report
+	 //		report_type - The "data-report-type" property of the object used to select a report
+	 //
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: report_type
+	//***************************************************************************
+ 
 
-	public static select_automated_report(String report_data_type, String report_name) {
+	public static select_automated_report(String report_data_type, String report_type) {
 
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Create Report'))
 
@@ -34,12 +51,37 @@ public class Automated_Reports {
 		data_type.addProperty('id', ConditionType.EQUALS, report_data_type)
 
 		TestObject report = new TestObject('report')
-		report.addProperty('data-report-type', ConditionType.EQUALS, report_name)
+		report.addProperty('data-report-type', ConditionType.EQUALS, report_type)
 
 		WebUI.click(data_type)
 		WebUI.click(report)
-		return report_name
+		return report_type
 	}
+	
+	//***************************************************************************
+	 // Function Name: report_settings
+	 //
+	 // Function Overview: configures the "settings" page of the report. 
+	 //		Adds a report name
+	 //		Adds a subject line for the email
+	 //		Sets the time period
+	 //     Sets screenshot to "yes" or "no"
+	 // 	Clicks "Next"
+	 //
+	 // Function Input Variable(s):
+	 //
+	 // 	report_name (required) - The given name of the report (String)
+	 //		subject_line (required) - The given subject line of the email (String)
+	 //     time_period (optional) - The number of hours or days included in the report email (String, but the string should be an integer from 1-31)
+	 //		time_unit (optional) - Sets whether the time period is "hours" or "days" (String, accepts "hours" or "days")
+	 //		screenshot (optional) - Sets whether a screenshot is included in the report email (String, accepts "yes" or "no")
+	 //
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	//***************************************************************************
+ 
 
 	public static report_settings(String report_name, String subject_line, String time_period = '1', String time_unit = 'days', String screenshot = 'No') {
 
@@ -73,11 +115,41 @@ public class Automated_Reports {
 			WebUI.click(filter_text)
 		}
 	}
+	
+	//***************************************************************************
+	 // Function Name: report_settings
+	 //
+	 // Function Overview: Clicks the "Create" button to create the report
+	 //
+	 // Function Input Variable(s): None
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	//***************************************************************************
 
 	public static create_report() {
 
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Create'))
 	}
+	
+
+	//***************************************************************************
+	 // Function Name: validate_report_row
+	 //
+	 // Function Overview: Determines the row number of a report with a specific name in the reports table
+	 //		Expands the table to view "All" rows of the report
+	 //		Defines the table
+	 //		Gets the total number of rows in the table
+	 //		Loops through the table rows with the report name and compares it to the input variables
+	 //		If the table cell matches the text of the input variable, the row number is returned
+	 //
+	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: row - the row number of the report with the name in the input variable
+	//***************************************************************************
 
 	public static validate_report_row(String report_name) {
 
@@ -100,6 +172,23 @@ public class Automated_Reports {
 			}
 		}
 	}
+	
+	//***************************************************************************
+	 // Function Name: generate_report
+	 //
+	 // Function Overview: Clicks the "Generate Report" button for a specified report 
+	 //		Calls the validate_report_row method and stores it as an int (which is the row number)
+	 //		Creates a dynamic test object for the "Generate Report" button
+	 //		Adds the xPath property to the "Generate Report" button object; the row number integer is plugged into the xPath
+	 //		The "Generate Report" button is clicked
+	 //		Additional confirmation buttons are clicked to return to the normal reports page screen
+	 //
+	 // Function Input Variable(s): report_name - the name of a report in the reports table 
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	//***************************************************************************
 
 	public static generate_report(String report_name) {
 
@@ -112,6 +201,18 @@ public class Automated_Reports {
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Generate Report'))
 		WebUI.click(findTestObject('Object Repository/Automated Reports/OK'))
 	}
+	
+	//***************************************************************************
+	 // Function Name: get_token
+	 //
+	 // Function Overview: A POST request, using REST, which retrieves an access token required to authenticate a GET request and read an inbox
+	 //
+	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: access_token - the token used to authenticate the GET request and read the outlook inbox
+	//***************************************************************************
 
 	public static get_token() {
 
@@ -132,7 +233,28 @@ public class Automated_Reports {
 		String access_token = StringUtils.substringBetween(token_text, '"access_token":"', '","refresh_token":')
 		return access_token
 	}
-
+	
+	//***************************************************************************
+	 // Function Name: report_email_request
+	 //
+	 // Function Overview: A GET request used to read an outlook inbox and find an email with a specfic subject line
+	 //		Formats the subject line 
+	 //		Places the formatted subject line into the endpoint (hardcoded endpoint formatted for special characters)
+	 //		Calls the get_token method and stores it as a String with "Bearer " added as the type of authentication
+	 //		Creates a new request object; Sets the rest url and request method
+	 //		Defines header properties; Adds the authorization property and sets it equal to the stored access token string
+	 //		Sends the request
+	 // 	Parses the responses
+	 //		Returns the parsed response
+	 //
+	 //
+	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: parsedJson - The parsed response of the request for email with a certain subject
+	//***************************************************************************
+	
 	public static report_email_request(String subject_line) {
 
 		String subject_format = subject_line.replaceAll(' ', '+')
@@ -158,6 +280,24 @@ public class Automated_Reports {
 
 		return parsedJson
 	}
+	
+	//***************************************************************************
+	 // Function Name: open_report_link
+	 //
+	 // Function Overview: Opens the report link if the report email is found
+	 //		Calls report_email_request to get the parsedJson
+	 //		Gets the value of the subject line in the response
+	 //		Compares the subject line in the response to the subject line in the input variables
+	 //		If the subject lines match, the body value is retrieved
+	 //		The report link is extracted from the body
+	 //		The browser navigates to the url of the report link
+	 //
+	 // Function Input Variable(s): subject_line - the subject line of a report email
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: String, which states "Email Found" or "Email Not Found"
+	//***************************************************************************
 
 	public static open_report_link(String subject_line) {
 
@@ -177,6 +317,24 @@ public class Automated_Reports {
 		KeywordUtil.markFailed(subject_line + " email has not been found.")
 		return "Email not found"
 	}
+	
+	//***************************************************************************
+	 // Function Name: verify_report_contents
+	 //
+	 // Function Overview: Checks that the report contains (or does not contain) specified contents
+	 //		Calls open_report_link and stores the returned string
+	 //		If the string is "Email Found" it looks for the report name, a graph or table, and verfies "No data to display" is not present.
+	 // 	If the string is "Email Not Found" it skips the above steps and returns the string, "Email generation failed". 
+	 //
+	 // Function Input Variable(s): 
+	 //		subject_line - the subject line of a report email (String)
+	 //		report_name - the name of the report (String)
+	 //		row - the row number of the excel which contains the id for a graph or table of the report you want to verify (int)
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: String of report status - "Report generation passed", "Report generation failed", "Email generation failed"
+	//***************************************************************************
 
 	public static verify_report_contents(String subject_line, String report_name, int row) {
 
