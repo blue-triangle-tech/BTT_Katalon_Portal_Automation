@@ -15,6 +15,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class Logging {
+	
+	//***************************************************************************
+	 // Function Name: get_console_errors
+	 //
+	 // Function Overview: Gets console errors of the error level defined in the input variable
+	 //		Gets browser logs
+	 //		Gets the page title
+	 //		Adds the page title to a list as the first item
+	 //		Goes through each log entry 
+	 // 	Checks if the error level matches the input variable
+	 //		If the error level matches it adds the message to the console_errors list
+	 //
+	 // Function Input Variable(s): error_level (String, required) - accepts "SEVERE" or "WARNING"
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: List console_errors
+	//***************************************************************************
 
 	public static get_console_errors(String error_level) {
 
@@ -43,7 +61,7 @@ public class Logging {
 	}
 
 
-
+//not complete
 	public static write_console_errors() {
 
 		String filename = RunConfiguration.getProjectDir()+ '/Data Files/ConsoleErrorsReport.xls'
@@ -53,6 +71,7 @@ public class Logging {
 		HSSFSheet sheet = workbook.createSheet("page_title");
 	}
 
+	//not complete
 	void addGlobalVariable(String name, def value) {
 		GroovyShell shell1 = new GroovyShell()
 		MetaClass mc = shell1.evaluate("internal.GlobalVariable").metaClass
