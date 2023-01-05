@@ -31,7 +31,7 @@
     },
     {
       &quot;name&quot;: &quot;username&quot;,
-      &quot;value&quot;: &quot;&quot;
+      &quot;value&quot;: &quot;qa.automation@bluetriangle.com&quot;
     },
     {
       &quot;name&quot;: &quot;password&quot;,
