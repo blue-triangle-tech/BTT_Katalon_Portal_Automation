@@ -27,7 +27,7 @@ String time = timestamp.current_time()
 
 String page_name_text = page_text + time
 
-TestObject page_name = findTestObject('Object Repository/Tag Testing/Page Naming/Page Name')
+TestObject page_name = findTestObject('Object Repository/Tag Testing/Settings_Page Naming/input_PageName')
 
 Tags tag = new Tags()
 tag.edit_page_name(page_id, site_id, page_name, page_name_text)

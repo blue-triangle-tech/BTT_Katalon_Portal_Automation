@@ -36,11 +36,11 @@ public class Executive_Reports_Crux {
 
 	public static verify_crux_tables() {
 
-		TestObject bestToWorst = findTestObject('Object Repository/Executive CrUX Report/Best to Worst table')
-		TestObject ranksByMetric = findTestObject('Object Repository/Executive CrUX Report/Ranks by Metric Table')
-		TestObject metricTable1 = findTestObject('Object Repository/Executive CrUX Report/Metric Table 1')
-		TestObject metricTable2 = findTestObject('Object Repository/Executive CrUX Report/Metric Table 2')
-		TestObject metricTable3 = findTestObject('Object Repository/Executive CrUX Report/Metric Table 3')
+		TestObject bestToWorst = findTestObject('Object Repository/Executive CrUX Report/table_BestToWorst')
+		TestObject ranksByMetric = findTestObject('Object Repository/Executive CrUX Report/table_RanksbyMetric')
+		TestObject metricTable1 = findTestObject('Object Repository/Executive CrUX Report/table_MetricTable1')
+		TestObject metricTable2 = findTestObject('Object Repository/Executive CrUX Report/table_MetricTable2')
+		TestObject metricTable3 = findTestObject('Object Repository/Executive CrUX Report/table_MetricTable3')
 
 		WebUI.verifyElementPresent(bestToWorst, 10)
 		WebUI.verifyElementPresent(ranksByMetric, 10)
@@ -51,8 +51,8 @@ public class Executive_Reports_Crux {
 
 	public static verify_crux_report() {
 
-		TestObject mobile_tab = findTestObject('Object Repository/Executive CrUX Report/Mobile Tab')
-		TestObject desktop_tab = findTestObject('Object Repository/Executive CrUX Report/Desktop Tab')
+		TestObject mobile_tab = findTestObject('Object Repository/Executive CrUX Report/tab_Mobile')
+		TestObject desktop_tab = findTestObject('Object Repository/Executive CrUX Report/tab_Desktop')
 
 		List tabs = [mobile_tab, desktop_tab]
 

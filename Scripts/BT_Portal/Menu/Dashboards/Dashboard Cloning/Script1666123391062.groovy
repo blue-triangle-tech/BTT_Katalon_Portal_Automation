@@ -26,17 +26,17 @@ menu.select_menu_page('dashboard-li', null, null)
 
 for (int x = 0; x<=75; x++) {
 	
-WebUI.click(findTestObject('Object Repository/Dashboards/Add Dashboard'))
+WebUI.click(findTestObject('Object Repository/Dashboards/button_AddDashboard'))
 
 WebUI.click(findTestObject('Object Repository/Page_Dashboards/input_Me_clone-dashboards-checkbox'))
 
 WebUI.click(findTestObject('Object Repository/Page_Dashboards/button_Clone'))
 
-WebUI.click(findTestObject('Object Repository/Dashboards/select user'))
+WebUI.click(findTestObject('Object Repository/Dashboards/button_SelectUser'))
 
 WebUI.click(findTestObject('Object Repository/Page_Dashboards/li_(Myself)'))
 
-WebUI.click(findTestObject('Object Repository/Dashboards/select user'))
+WebUI.click(findTestObject('Object Repository/Dashboards/button_SelectUser'))
 
 WebUI.click(findTestObject('Object Repository/Page_Dashboards/button_Clone Dashboard'))
 

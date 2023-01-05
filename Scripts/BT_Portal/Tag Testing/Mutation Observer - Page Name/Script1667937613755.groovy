@@ -27,7 +27,7 @@ String time = timestamp.current_time()
 
 String page_name_text = mutation_name + time
 
-TestObject page_name = findTestObject('Object Repository/Tag Testing/Mutation Observer/Mutation Observer Page Name')
+TestObject page_name = findTestObject('Object Repository/Tag Testing/Settings_Mutation Observer/obj_MutationObserverPageName')
 
 Tags tag = new Tags()
 tag.edit_mutation_observer(site_id, page_name, page_name_text)

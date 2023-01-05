@@ -13,24 +13,20 @@
          <key>XPATH</key>
          <value>//input[@id='loginform-username']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @id = 'loginform-username' and @name = 'LoginForm[username]']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
-      <webElementGuid>0a859085-3b8d-465d-a91d-adc29b9106e9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f381bc78-51f6-498a-880e-0c9b05981b39</webElementGuid>
+      <webElementGuid>7ce1ee7e-67a7-4184-b705-6a273b8ea0e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>loginform-username</value>
-      <webElementGuid>7aac41f0-f9ab-4e37-a2ad-a0ac0e01f405</webElementGuid>
+      <webElementGuid>208a78d5-4257-4e27-9726-a9c4ae4b1ea7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>0aa8f2b2-ac87-4606-ba20-92d5f7dcff62</webElementGuid>
+      <webElementGuid>84f505fe-c582-44b6-9b7a-ddda3d076ae0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +50,7 @@
       <name>name</name>
       <type>Main</type>
       <value>LoginForm[username]</value>
-      <webElementGuid>3f3f088c-237a-46bc-a1a9-266174a5cbe6</webElementGuid>
+      <webElementGuid>00391cdd-8071-487f-897e-0b79fd506725</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +58,7 @@
       <name>aria-required</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>1194093c-9c74-46a4-b5e8-9037ddf9e24c</webElementGuid>
+      <webElementGuid>a469741d-ecc0-4abc-bffc-8d91604a0782</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +66,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9ca8762c-501b-49af-a8d3-3183bda816e8</webElementGuid>
+      <webElementGuid>98f474cc-3a15-4cf0-bc9b-3a25342f45f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,71 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;loginform-username&quot;)</value>
-      <webElementGuid>5b995718-d766-4862-acda-199479685244</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
-      <webElementGuid>043342a3-ff5f-4cf6-91ae-d939609db171</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>4aadc618-127f-49eb-a571-fa3aa631b47b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>loginform-username</value>
-      <webElementGuid>7bb620d0-7945-490c-b64d-0192e8fe64ac</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>99671eff-f653-466f-8e67-de82aef78f3a</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>LoginForm[username]</value>
-      <webElementGuid>eca5c558-00aa-46c8-98d1-4994c45eabef</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-required</name>
-      <type>Main</type>
-      <value>true</value>
-      <webElementGuid>49285428-20b6-46b8-ae7c-c8fef85395c3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-invalid</name>
-      <type>Main</type>
-      <value>true</value>
-      <webElementGuid>b8c9049d-8b12-4b68-958e-83be60c2fc7d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;loginform-username&quot;)</value>
-      <webElementGuid>5e03838d-8c4e-4503-bec6-2abc296ca9e0</webElementGuid>
+      <webElementGuid>81289237-153d-4fbd-aaf5-9ce9e8c2f8e3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -150,7 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='loginform-username']</value>
-      <webElementGuid>d964cd11-356f-4a0b-8c61-bff0882815fb</webElementGuid>
+      <webElementGuid>05601420-a9f9-498f-89d4-7b91099570a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='login-form']/div[3]/input</value>
-      <webElementGuid>7df80e64-1cd9-4b7e-a033-2ffda5da71eb</webElementGuid>
+      <webElementGuid>4656bb56-9b5c-4cc0-aeb3-83b30dedd40c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/input</value>
-      <webElementGuid>20c503ef-c329-40a1-ac9e-3f720b01e503</webElementGuid>
+      <webElementGuid>ea06c09f-2d9e-458f-8560-13bbfb9db42e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @id = 'loginform-username' and @name = 'LoginForm[username]']</value>
-      <webElementGuid>5e1b732c-67e3-4c3a-a365-d9fbb0e6ca00</webElementGuid>
+      <webElementGuid>31b5c51c-c057-4022-8f26-b6330b9a0c3d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

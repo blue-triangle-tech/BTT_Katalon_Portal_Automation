@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Business</name>
+   <tag></tag>
+   <elementGuidId>ceee900f-d59b-48ae-a040-5efcb3bbd151</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;chartID_3&quot;][count(. | //*[(contains(text(), 'BUSINESS') or contains(., 'BUSINESS'))]) = count(//*[(contains(text(), 'BUSINESS') or contains(., 'BUSINESS'))])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;chartID_3&quot;]</value>
+      <webElementGuid>a26271a0-a46d-487a-a07e-e016abff7856</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>BUSINESS</value>
+      <webElementGuid>7f8436c6-3fff-4dbd-b4e9-940ff9145f6a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

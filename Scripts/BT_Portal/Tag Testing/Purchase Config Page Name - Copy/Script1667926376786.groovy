@@ -20,9 +20,9 @@ Time timestamp = new Time()
 String time = timestamp.current_time()
 
 String PCPN = 'Random Page' + time
-String text = WebUI.getText(findTestObject('Object Repository/Tag Testing/Sites/Purchase Configuration Page Name'))
+String text = WebUI.getText(findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/input_PurchaseConfigurationPageName'))
 println text
-//WebUI.click(findTestObject('Object Repository/Tag Testing/Sites/Save'))
+//WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/button_Save'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor js = ((driver) as JavascriptExecutor)

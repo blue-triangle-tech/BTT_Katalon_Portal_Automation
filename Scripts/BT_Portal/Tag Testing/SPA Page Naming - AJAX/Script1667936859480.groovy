@@ -27,7 +27,7 @@ String time = timestamp.current_time()
 
 String ajax_text = ajax + time
 
-TestObject start_ajax = findTestObject('Object Repository/Tag Testing/SPA Page Naming/Start AJAX')
+TestObject start_ajax = findTestObject('Object Repository/Tag Testing/Settings_SPA Page Naming/Create SPA Page Name/input_StartAJAX')
 
 Tags tag = new Tags()
 tag.edit_spa_page_name(page_id, site_id, start_ajax, ajax_text)

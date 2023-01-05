@@ -18,12 +18,12 @@ public class Tags {
 	public static edit_site(String site_id, TestObject field, String field_text) {
 		WebUI.navigateToUrl('https://portal.bluetriangle.com/btportal/web/index.php?r=sites/update&id=' + site_id)
 		WebUI.setText(field, field_text)
-		if (WebUI.verifyElementNotPresent(findTestObject('Object Repository/Tag Testing/Sites/OK Button'), 5)) {
-			WebUI.click(findTestObject('Object Repository/Tag Testing/Sites/Save'))
+		if (WebUI.verifyElementNotPresent(findTestObject('Object Repository/Tag Testing/Settings_Sites/button_OK'), 5)) {
+			WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/button_Save'))
 		}
 		else {
-			WebUI.click(findTestObject('Object Repository/Tag Testing/Sites/OK Button'))
-			WebUI.click(findTestObject('Object Repository/Tag Testing/Sites/Save'))
+			WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Sites/button_OK'))
+			WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/button_Save'))
 		}
 	}
 
@@ -31,21 +31,21 @@ public class Tags {
 
 		WebUI.navigateToUrl('https://portal.bluetriangle.com/btportal/web/index.php?r=page-name/update&id=' + page_id +'&sid=' + site_id)
 		WebUI.setText(field, field_text)
-		WebUI.click(findTestObject('Object Repository/Tag Testing/Page Naming/Save'))
+		WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Page Naming/button_Save'))
 	}
 
 	public static edit_spa_page_name(String spa_page_id, String site_id, TestObject field, String field_text) {
 		WebUI.navigateToUrl('https://portal.bluetriangle.com/btportal/web/index.php?r=vt-page-name/update&sid='+ site_id +'&id=' + spa_page_id)
 		WebUI.setText(field, field_text)
-		WebUI.click(findTestObject('Object Repository/Tag Testing/SPA Page Naming/Save'))
+		WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_SPA Page Naming/Create SPA Page Name/button_Save'))
 	}
 
 	public static edit_mutation_observer(String site_id, TestObject field, String field_text) {
 
 		WebUI.navigateToUrl('https://portal.bluetriangle.com/btportal/web/index.php?r=mutation-observer/index&sid=' + site_id + '#')
-		WebUI.click(findTestObject('Object Repository/Tag Testing/Mutation Observer/Edit Page Name'))
+		WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Mutation Observer/button_EditPageName'))
 		WebUI.setText(field, field_text)
-		WebUI.click(findTestObject('Object Repository/Tag Testing/Mutation Observer/Save'))
+		WebUI.click(findTestObject('Object Repository/Tag Testing/Settings_Mutation Observer/button_Save'))
 	}
 	public static check_tag(String site, String field_text) {
 
@@ -60,7 +60,7 @@ public class Tags {
 		int x = 0
 		while (x<=180) {
 
-			String tag_text = WebUI.getText(findTestObject('Object Repository/Tag Testing/Sites/Tag Page'))
+			String tag_text = WebUI.getText(findTestObject('Object Repository/Tag Testing/Settings_Sites/obj_TabPage'))
 
 			if (tag_text.contains(field_text)) {
 				KeywordUtil.logInfo('The tag text was found in approximately ' + x + ' seconds')

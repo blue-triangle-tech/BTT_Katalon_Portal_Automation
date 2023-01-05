@@ -27,7 +27,7 @@ String time = timestamp.current_time()
 
 String end_selector_text = selector_text + time
 
-TestObject end_selectors = findTestObject('Object Repository/Tag Testing/Mutation Observer/End Selectors')
+TestObject end_selectors = findTestObject('Object Repository/Tag Testing/Settings_Mutation Observer/input_EndSelectors')
 
 Tags tag = new Tags()
 tag.edit_mutation_observer(site_id, end_selectors, end_selector_text)

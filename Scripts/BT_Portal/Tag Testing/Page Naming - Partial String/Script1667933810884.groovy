@@ -27,7 +27,7 @@ String time = timestamp.current_time()
 
 String partial_string_text = string_text + time
 
-TestObject partial_string = findTestObject('Object Repository/Tag Testing/Page Naming/Partial String')
+TestObject partial_string = findTestObject('Object Repository/Tag Testing/Settings_Page Naming/input_PartialString')
 
 Tags tag = new Tags()
 tag.edit_page_name(page_id, site_id, partial_string, partial_string_text)

@@ -22,29 +22,29 @@ public class Executive_Reports_KPI {
 // adds all the widgets in the KPI report to a list
 	public static KPI_report_objects() {
 
-		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
+		TestObject HM = findTestObject('Object Repository/Executive KPI Report/text_HighlightedMetric')
 		String HM_text = WebUI.getText(HM)
 		String highlighted_metric = HM_text.minus('Highlighted Metric: ')
 
-		TestObject HM_widget = findTestObject('Object Repository/Executive KPI Report/Highlighted Metric')
-		TestObject MD_widget = findTestObject('Object Repository/Executive KPI Report/Metric Definitions')
-		TestObject TC = findTestObject('Object Repository/Executive KPI Report/Top Cards')
-		TestObject RU = findTestObject('Object Repository/Executive KPI Report/Rollup Table')
-		TestObject MT = findTestObject('Object Repository/Executive KPI Report/Metric Trends')
-		TestObject MST = findTestObject('Object Repository/Executive KPI Report/Metric Score and Trends')
-		TestObject TP = findTestObject('Object Repository/Executive KPI Report/Top X Pages')
+		TestObject HM_widget = findTestObject('Object Repository/Executive KPI Report/widget_HighlightedMetric')
+		TestObject MD_widget = findTestObject('Object Repository/Executive KPI Report/widget_MetricDefinitions')
+		TestObject TC = findTestObject('Object Repository/Executive KPI Report/widget_TopCards')
+		TestObject RU = findTestObject('Object Repository/Executive KPI Report/widget_RollupTable')
+		TestObject MT = findTestObject('Object Repository/Executive KPI Report/widget_MetricTrends')
+		TestObject MST = findTestObject('Object Repository/Executive KPI Report/widget_MetricScoreandTrends')
+		TestObject TP = findTestObject('Object Repository/Executive KPI Report/widget_TopXPages')
 
 		TP.addProperty("text", ConditionType.CONTAINS, "%")
 		TP.addProperty("text", ConditionType.CONTAINS, highlighted_metric)
 
-		TestObject CP = findTestObject('Object Repository/Executive KPI Report/Custom Pages')
+		TestObject CP = findTestObject('Object Repository/Executive KPI Report/widget_CustomPages')
 		CP.addProperty("text", ConditionType.CONTAINS, "%")
 		CP.addProperty("text", ConditionType.CONTAINS, highlighted_metric)
 
-		TestObject TD = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution')
+		TestObject TD = findTestObject('Object Repository/Executive KPI Report/widget_TrafficDistribution')
 		TD.addProperty("text", ConditionType.CONTAINS, "%")
 
-		TestObject AT = findTestObject('Object Repository/Executive KPI Report/Aggregate Trend')
+		TestObject AT = findTestObject('Object Repository/Executive KPI Report/widget_AggregateTrend')
 
 		List all_objects = [HM_widget, MD_widget, TC, RU, MT, MST, TP, CP, TD, AT]
 	}
@@ -52,7 +52,7 @@ public class Executive_Reports_KPI {
 	// verifies that the highlighted metric is highlighted in widgets that contain this
 	public static validate_object_highlights() {
 
-		TestObject HM = findTestObject('Object Repository/Executive KPI Report/Highlighted Text')
+		TestObject HM = findTestObject('Object Repository/Executive KPI Report/text_HighlightedMetric')
 		String HM_text = WebUI.getText(HM)
 		String highlighted_metric = HM_text.minus('Highlighted Metric: ')
 
@@ -121,7 +121,7 @@ public class Executive_Reports_KPI {
 	//method in progress - will validate report intervals and check that data matches
 	public static validate_interval() {
 
-		String report_interval = WebUI.getText(findTestObject('Object Repository/Executive KPI Report/Report Interval'))
+		String report_interval = WebUI.getText(findTestObject('Object Repository/Executive KPI Report/obj_ReportInterval'))
 		if (report_interval == "Daily") {
 
 			String interval = "Day"
@@ -135,9 +135,9 @@ public class Executive_Reports_KPI {
 	//method in progress - will be used to verify all bar colors are present
 	public static verify_TD_bar_colors() {
 
-		TestObject red = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution Red Bars')
-		TestObject green = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution Green Bars')
-		TestObject yellow = findTestObject('Object Repository/Executive KPI Report/Traffic Distribution Yellow Bars')
+		TestObject red = findTestObject('Object Repository/Executive KPI Report/obj_TrafficDistribution_RedBars')
+		TestObject green = findTestObject('Object Repository/Executive KPI Report/obj_TrafficDistribution_GreenBars')
+		TestObject yellow = findTestObject('Object Repository/Executive KPI Report/obj_TrafficDistribution_YellowBars')
 
 		List bars = [red, yellow, green]
 
@@ -153,9 +153,9 @@ public class Executive_Reports_KPI {
 	// Step 5: Verifies whether a report has been generated for the current date with verify_date()
 	public static verify_KPI_report() {
 
-		TestObject mobile_tab = findTestObject('Object Repository/Executive KPI Report/Mobile Tab')
-		TestObject tablet_tab = findTestObject('Object Repository/Executive KPI Report/Tablet Tab')
-		TestObject desktop_tab = findTestObject('Object Repository/Executive KPI Report/Desktop Tab')
+		TestObject mobile_tab = findTestObject('Object Repository/Executive KPI Report/tab_Mobile')
+		TestObject tablet_tab = findTestObject('Object Repository/Executive KPI Report/tab_Tablet')
+		TestObject desktop_tab = findTestObject('Object Repository/Executive KPI Report/tab_Desktop')
 
 		List device_tabs = [desktop_tab, mobile_tab, tablet_tab]
 

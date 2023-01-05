@@ -19,7 +19,7 @@ String time = timestamp.current_time()
 
 String PCPN_text = purchase_config + time
 
-TestObject PCPN = findTestObject('Object Repository/Tag Testing/Sites/Purchase Configuration Page Name')
+TestObject PCPN = findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/input_PurchaseConfigurationPageName')
 
 Tags tag = new Tags()
 tag.edit_site(site_id, PCPN, PCPN_text)

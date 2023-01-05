@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>tab_Desktop</name>
+   <tag></tag>
+   <elementGuidId>a0e66f53-6fc5-4231-b04d-792f9f2548ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;page-controls-og&quot;]/div[4]/button[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>executive-kpi-report-device-tab btn btn-default tab-btn left active</value>
+      <webElementGuid>eb6609bb-af8b-4d11-a75f-a97666312878</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>3e1398ba-f3dd-4ab8-ab43-4bde75765640</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-device</name>
+      <type>Main</type>
+      <value>Desktop</value>
+      <webElementGuid>d57d33c1-22f8-4e5b-8328-90b8db7d59b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;page-controls-og&quot;]/div[4]/button[1]</value>
+      <webElementGuid>db16338f-86e4-49e1-af6f-e41e5989fde9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

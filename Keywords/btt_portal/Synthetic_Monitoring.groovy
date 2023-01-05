@@ -31,19 +31,19 @@ public class Synthetic_Monitoring {
 
 	public static performance_detail() {
 
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Page Hits by HTTP Code'), 30)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Site Availability Over Time'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Performance Details by Page'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Performance Details'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Performance Details Graph'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Page Views'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Page Views for Selected Session'), 15)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Performance Breakdown'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/widget_PageHitsbyHTTPCode'), 30)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/widget_SiteAvailabilityOverTime'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PerformanceDetailsbyPage'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/widget_PerformanceDetails'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PerformanceDetailsGraph'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PageViews'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PageViewsforSelectedSession'), 15)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PageHitDrilldown_PerformanceBreakdown'), 15)
 
 		//WebUI.click(findTestObject('Object Repository/Page_Synthetic Performance Detail/Green Plot Point'))
 
-		//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Performance Breakdown'), 15)
-		//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/Domain Level Activity'), 15)
+		//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PageHitDrilldown_PerformanceBreakdown'), 15)
+		//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Synthetic Performance Detail/graph_PageHitDrilldown_DomainLevelActivity'), 15)
 	}
 
 	public static test_results() {

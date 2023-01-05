@@ -19,7 +19,7 @@ String time = timestamp.current_time()
 
 String var = "CV Page Group" + time
 String TYV_text = '(function(){PTDB='+ var +'; return void 0;})()'
-TestObject TYV = findTestObject('Object Repository/Tag Testing/Sites/Purchase Configuration Page Name')
+TestObject TYV = findTestObject('Object Repository/Tag Testing/Settings_Sites/Create Site/input_PurchaseConfigurationPageName')
 
 Tags tag = new Tags()
 tag.edit_site(site_id, TYV, TYV_text)
