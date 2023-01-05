@@ -21,6 +21,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Executive_Reports_Crux {
+	
+	
+	//***************************************************************************
+	 // Function Name: verify_crux_text
+	 //
+	 // Function Overview: Verifies text is present, indicating objects have loaded
+	 //
+	 // Function Input Variable(s): None
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
 
 	public static verify_crux_text(String tab){
 
@@ -34,6 +47,17 @@ public class Executive_Reports_Crux {
 		WebUI.verifyTextPresent('CrUX Data Trend From', true)
 	}
 
+	//***************************************************************************
+	 // Function Name: verify_crux_tables
+	 //
+	 // Function Overview: Verifies table elements are present in the crux report
+	 //
+	 // Function Input Variable(s): None
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
 	public static verify_crux_tables() {
 
 		TestObject bestToWorst = findTestObject('Object Repository/Executive CrUX Report/Best to Worst table')
@@ -48,6 +72,21 @@ public class Executive_Reports_Crux {
 		WebUI.verifyElementPresent(metricTable2, 10)
 		WebUI.verifyElementPresent(metricTable3, 10)
 	}
+	
+	//***************************************************************************
+	 // Function Name: verify_crux_report
+	 //
+	 // Function Overview: Verifies crux methods for each tab in the report
+	 //
+	 //		Defines tabs and puts them in a list
+	 //		For each tab in the list it calls verify_crux_text and verify_crux_tables
+	 //
+	 // Function Input Variable(s): None
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
 
 	public static verify_crux_report() {
 
