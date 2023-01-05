@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>15d37b86-3b5a-4812-a6df-e29fb457597c</dataFileGUID>
-   <dataSourceUrl>../../OneDrive - Blue Triangle Technologies/Documents/Test Data/Report types.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Report types.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
