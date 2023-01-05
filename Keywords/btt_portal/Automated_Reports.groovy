@@ -33,8 +33,8 @@ public class Automated_Reports {
 	 //
 	 // Function Input Variable(s): 
 	 //
-	 // 	report_data_type - The "ID" property of the object used to select a rum or synthetic report
-	 //		report_type - The "data-report-type" property of the object used to select a report
+	 // 	report_data_type (String, required) - The "ID" property of the object used to select a rum or synthetic report
+	 //		report_type (String, required) - The "data-report-type" property of the object used to select a report
 	 //
 	 //
 	 // Function Output Variable(s): None
@@ -70,11 +70,11 @@ public class Automated_Reports {
 	 //
 	 // Function Input Variable(s):
 	 //
-	 // 	report_name (required) - The given name of the report (String)
-	 //		subject_line (required) - The given subject line of the email (String)
-	 //     time_period (optional) - The number of hours or days included in the report email (String, but the string should be an integer from 1-31)
-	 //		time_unit (optional) - Sets whether the time period is "hours" or "days" (String, accepts "hours" or "days")
-	 //		screenshot (optional) - Sets whether a screenshot is included in the report email (String, accepts "yes" or "no")
+	 // 	report_name (String, required) - The given name of the report 
+	 //		subject_line (String, required) - The given subject line of the email 
+	 //     time_period (String, optional) - The number of hours or days included in the report email (String, but the string should be an integer from 1-31)
+	 //		time_unit (String, optional) - Sets whether the time period is "hours" or "days" (accepts "hours" or "days")
+	 //		screenshot (String, optional) - Sets whether a screenshot is included in the report email (accepts "yes" or "no")
 	 //
 	 //
 	 // Function Output Variable(s): None
@@ -137,14 +137,14 @@ public class Automated_Reports {
 	//***************************************************************************
 	 // Function Name: validate_report_row
 	 //
-	 // Function Overview: Determines the row number of a report with a specific name in the reports table
+	 // Function Overview: Determines the row number of a report with a specific name (input variable) in the reports table
 	 //		Expands the table to view "All" rows of the report
 	 //		Defines the table
 	 //		Gets the total number of rows in the table
 	 //		Loops through the table rows with the report name and compares it to the input variables
 	 //		If the table cell matches the text of the input variable, the row number is returned
 	 //
-	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 // Function Input Variable(s): report_name (String, required) - the name of a report in the reports table
 	 //
 	 // Function Output Variable(s): None
 	 //
@@ -183,7 +183,7 @@ public class Automated_Reports {
 	 //		The "Generate Report" button is clicked
 	 //		Additional confirmation buttons are clicked to return to the normal reports page screen
 	 //
-	 // Function Input Variable(s): report_name - the name of a report in the reports table 
+	 // Function Input Variable(s): report_name (String, required) - the name of a report in the reports table 
 	 //
 	 // Function Output Variable(s): None
 	 //
@@ -206,8 +206,14 @@ public class Automated_Reports {
 	 // Function Name: get_token
 	 //
 	 // Function Overview: A POST request, using REST, which retrieves an access token required to authenticate a GET request and read an inbox
+	 //		Requires the following account environment variables to be set on your machine: 
+	 //			client_id
+	 //			client_secret
+	 //			automation_email
+	 //			automation_email_pass
+	 //			tenant_id 
 	 //
-	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 // Function Input Variable(s): report_name (String, required) - the name of a report in the reports table
 	 //
 	 // Function Output Variable(s): None
 	 //
@@ -247,8 +253,7 @@ public class Automated_Reports {
 	 // 	Parses the responses
 	 //		Returns the parsed response
 	 //
-	 //
-	 // Function Input Variable(s): report_name - the name of a report in the reports table
+	 // Function Input Variable(s): report_name (String, required) - the name of a report in the reports table
 	 //
 	 // Function Output Variable(s): None
 	 //
@@ -292,7 +297,7 @@ public class Automated_Reports {
 	 //		The report link is extracted from the body
 	 //		The browser navigates to the url of the report link
 	 //
-	 // Function Input Variable(s): subject_line - the subject line of a report email
+	 // Function Input Variable(s): subject_line (String, required) - the subject line of a report email
 	 //
 	 // Function Output Variable(s): None
 	 //
@@ -327,9 +332,9 @@ public class Automated_Reports {
 	 // 	If the string is "Email Not Found" it skips the above steps and returns the string, "Email generation failed". 
 	 //
 	 // Function Input Variable(s): 
-	 //		subject_line - the subject line of a report email (String)
-	 //		report_name - the name of the report (String)
-	 //		row - the row number of the excel which contains the id for a graph or table of the report you want to verify (int)
+	 //		subject_line (String, required) - the subject line of a report email 
+	 //		report_name (String, required) - the name of the report 
+	 //		row (int, required) - the row number of the excel which contains the id property for a graph or table of the report you want to verify (int)
 	 //
 	 // Function Output Variable(s): None
 	 //

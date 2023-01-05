@@ -66,7 +66,7 @@ public class Alerts {
 		if (subject_line_text != null) {
 			WebUI.setText(subject_line, subject_line_text)
 		}
-		
+
 		WebUI.click(next)
 	}
 
