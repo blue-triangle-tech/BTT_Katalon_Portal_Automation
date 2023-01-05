@@ -17,8 +17,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class Digital_Experience_Overview {
 
-	//opens each score card and verifies that it contains data in the form of a table
-	//counts table rows and validates that data is present by ensuring more rows are present than headers
+
 	
 	//***************************************************************************
 	 // Function Name: verify_score_cards
