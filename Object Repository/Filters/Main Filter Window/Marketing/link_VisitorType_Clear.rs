@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Windows</name>
+   <name>link_VisitorType_Clear</name>
    <tag></tag>
-   <elementGuidId>33d3c162-4bb7-4a81-923c-73321e4c39ec</elementGuidId>
+   <elementGuidId>c93d0269-cdcb-47cd-bc2a-8c3d23741b7c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='windows']</value>
+         <value>//label[@for='visitor-type']//button[@class='btn-link clear-filter'][normalize-space()='Clear']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

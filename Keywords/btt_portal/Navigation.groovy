@@ -57,8 +57,8 @@ class Navigation {
 	//
 	// Function Return Value: None
 	//***************************************************************************
-	
-	
+
+
 	public void select_menu_page(String category, String type = null, String page = null) {
 
 		WebUI.click(menu)

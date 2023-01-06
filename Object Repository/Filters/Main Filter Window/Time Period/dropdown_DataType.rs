@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Windows</name>
+   <name>dropdown_DataType</name>
    <tag></tag>
-   <elementGuidId>33d3c162-4bb7-4a81-923c-73321e4c39ec</elementGuidId>
+   <elementGuidId>c64d7ed9-9066-44c5-aece-4a5d97bd83c6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='windows']</value>
+         <value>//select[@id='data-type']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
