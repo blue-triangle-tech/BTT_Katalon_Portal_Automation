@@ -68,6 +68,7 @@ if (report_type.getValue(1, row) == 'coreMetricsBySite') {
 	WebUI.click(findTestObject('Object Repository/Automated Reports/Report Filters/filter_pageName'))
 	WebUI.click(page)
 }
+report.set_filter(filter, label)
 report.create_report()
 report.generate_report(report_name)
 

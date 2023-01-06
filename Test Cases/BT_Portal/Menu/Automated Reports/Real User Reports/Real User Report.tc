@@ -17,6 +17,18 @@
       <value></value>
       <variableId>1d84e0c6-3128-4c8c-abaa-24a72092aaf9</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>44c90464-a1b0-4fab-8080-aad2ede06ec3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>566dd903-8316-4b06-aabe-516a47fb5fe4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'GDC Test Site 1'</defaultValue>
       <description></description>
@@ -30,5 +42,19 @@
       <id>1d84e0c6-3128-4c8c-abaa-24a72092aaf9</id>
       <masked>false</masked>
       <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Automated Reports/Report Filters/filter_contentGroup')</defaultValue>
+      <description></description>
+      <id>44c90464-a1b0-4fab-8080-aad2ede06ec3</id>
+      <masked>false</masked>
+      <name>filter</name>
+   </variable>
+   <variable>
+      <defaultValue>'US'</defaultValue>
+      <description></description>
+      <id>566dd903-8316-4b06-aabe-516a47fb5fe4</id>
+      <masked>false</masked>
+      <name>label</name>
    </variable>
 </TestCaseEntity>

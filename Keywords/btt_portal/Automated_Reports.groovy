@@ -61,7 +61,7 @@ public class Automated_Reports {
 	//***************************************************************************
 	// Function Name: report_settings
 	//
-	// Function Overview: configures the "settings" page of the report.
+	// Function Overview: Configures the "settings" page of the report.
 	//		Adds a report name
 	//		Adds a subject line for the email
 	//		Sets the time period
@@ -100,20 +100,32 @@ public class Automated_Reports {
 
 	public static report_type() {
 	}
+	
+	//***************************************************************************
+	 // Function Name: set_filter
+	 //
+	 // Function Overview: Sets a filter value in the report configuration
+	 //		Checks if a filter object is added as an input variable
+	 //		Sets the filter option by label
+	 //
+	 // Function Input Variable(s):
+	 //
+	 // 	filter (TestObject, optional) - The test object for the filter you want to set
+	 //		label (String, optional) - The label of the item you want to select in the filter
+	 //
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
 
-	public static set_filters(Array filters) {
+	public static set_filter(TestObject filter = null, String label = null) {
+		
+		if (filter != null) {
 
+		WebUI.selectOptionByLabel(filter, label, true)
 
-		for (filter in filters.keySet()) {
-
-			TestObject filter_name = new TestObject('filter')
-			filter_name.addProperty('id', ConditionType.EQUALS, filter)
-			WebUI.click(filter_name)
-
-			TestObject filter_text = new TestObject('filter text')
-			filter_text.addProperty('text', ConditionType.EQUALS, filters[filter])
-			WebUI.click(filter_text)
-		}
+	}
 	}
 
 	//***************************************************************************

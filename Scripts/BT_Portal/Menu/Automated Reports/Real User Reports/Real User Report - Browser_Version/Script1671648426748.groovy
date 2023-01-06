@@ -64,8 +64,10 @@ report.report_settings(report_name, report_subject, '7', 'hours', 'No')
 
 TestObject browser_version = new TestObject('browser version')
 browser_version.addProperty('text', ConditionType.EQUALS, 'Chrome-108-Windows 10')
-WebUI.click(findTestObject('Object Repository/Automated Reports/Report Filters/filter_browserOSversion'))
-WebUI.click(browser_version)
+//WebUI.click(findTestObject('Object Repository/Automated Reports/Report Filters/filter_browserOSversion'))
+//WebUI.click(browser_version)
+
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Automated Reports/Report Filters/filter_browserOSversion'), 'Chrome-108-Windows 10', true)
 
 if (report_type.getValue(1, row) == 'coreMetricsBySite') {
 	TestObject page = new TestObject('page')
