@@ -39,24 +39,29 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 class Navigation {
-
+	
+	//***************** Object Definitions ********************\\
+	
+	//Create Test Object Definitions - Common Portal Elements
 	TestObject menu = findTestObject('Object Repository/Common Portal Elements/button_menu')
 	TestObject settings = findTestObject('Object Repository/Common Portal Elements/button_Settings')
 	
+	//***************** Function Library ********************\\
+
 	//***************************************************************************
-	 // Function Name: select_menu_page
-	 //
-	 // Function Overview: Selects a page from the menu
-	 //
-	 // Function Input Variable(s):
-	 //		category (String, required) - The "id" property of the menu category or first layer of a page in the menu. (Dashboards, Synthetic Monitoring, Business Analytics, etc.)
-	 //		type (String, optional) - The "text" property of the 2nd layer of the menu when there are 3 layers (Real User Monitoring -> Web Browser)
-	 //		page (String, optional) - The "data-original-title" property of the last layer of the menu when there are 2 or 3 layers (Real User Monitoring -> Native App -> Performance Detail, Executive Reports -> null -> Digital Experience Overview)
-	 //
-	 // Function Output Variable(s): None
-	 //
-	 // Function Return Value: None
-	 //***************************************************************************
+	// Function Name: select_menu_page
+	//
+	// Function Overview: Selects a page from the menu
+	//
+	// Function Input Variable(s):
+	//		category (String, required) - The "id" property of the menu category or first layer of a page in the menu. (Dashboards, Synthetic Monitoring, Business Analytics, etc.)
+	//		type (String, optional) - The "text" property of the 2nd layer of the menu when there are 3 layers (Real User Monitoring -> Web Browser)
+	//		page (String, optional) - The "data-original-title" property of the last layer of the menu when there are 2 or 3 layers (Real User Monitoring -> Native App -> Performance Detail, Executive Reports -> null -> Digital Experience Overview)
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
 
 
 	public void select_menu_page(String category, String type = null, String page = null) {
@@ -82,21 +87,21 @@ class Navigation {
 			WebUI.click(select_page)
 		}
 	}
-	
+
 	//***************************************************************************
-	 // Function Name: select_site
-	 //
-	 // Function Overview: Selects the site to view data for in the portal
-	 //		Clicks the dropdown arrow
-	 //		Sets the site name as text
-	 //		Clicks on the site name
-	 //
-	 // Function Input Variable(s): site_name (String, required) - The name of the site in plain text
-	 //
-	 // Function Output Variable(s): None
-	 //
-	 // Function Return Value: None
-	 //***************************************************************************
+	// Function Name: select_site
+	//
+	// Function Overview: Selects the site to view data for in the portal
+	//		Clicks the dropdown arrow
+	//		Sets the site name as text
+	//		Clicks on the site name
+	//
+	// Function Input Variable(s): site_name (String, required) - The name of the site in plain text
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
 
 	public void select_site(String site_name) {
 
@@ -110,18 +115,18 @@ class Navigation {
 		WebUI.setText(search, site_name)
 		WebUI.click(website)
 	}
-	
+
 	//***************************************************************************
-	 // Function Name: settings_and_administration
-	 //
-	 // Function Overview: Opens the settings and administration menu and selects a page from it
-	 //
-	 // Function Input Variable(s): page_name (String, required) - The name of the page in plain text
-	 //
-	 // Function Output Variable(s): None
-	 //
-	 // Function Return Value: None
-	 //***************************************************************************
+	// Function Name: settings_and_administration
+	//
+	// Function Overview: Opens the settings and administration menu and selects a page from it
+	//
+	// Function Input Variable(s): page_name (String, required) - The name of the page in plain text
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
 
 	public void settings_and_administration(String page_name) {
 		//click settings by default
