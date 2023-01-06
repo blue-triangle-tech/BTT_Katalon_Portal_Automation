@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='apply-filters']</value>
+         <value>//button[@name='apply-filters']</value>
       </entry>
       <entry>
          <key>BASIC</key>

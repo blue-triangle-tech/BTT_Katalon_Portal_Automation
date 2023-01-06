@@ -29,45 +29,32 @@
       <value></value>
       <variableId>8688616e-9f94-4573-a219-6d36c24f7c17</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>b5731101-a8a5-4fe9-a6f7-97e0abf12e05</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
       <id>7c7627c9-3565-4a34-88e3-348b22fd2951</id>
       <masked>false</masked>
-      <name>objectTimeout</name>
+      <name>object_timeout</name>
    </variable>
    <variable>
       <defaultValue>'qa.dptviewer02'</defaultValue>
       <description></description>
       <id>ad7ee9b3-7f0e-4fdc-97f3-7cd4e1a4e2e0</id>
       <masked>false</masked>
-      <name>userName</name>
+      <name>user_name</name>
    </variable>
    <variable>
       <defaultValue>'QApass2022'</defaultValue>
       <description></description>
       <id>8debe951-7344-497d-b0e7-94126778b9a4</id>
       <masked>false</masked>
-      <name>userPassword</name>
+      <name>user_password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>8688616e-9f94-4573-a219-6d36c24f7c17</id>
       <masked>false</masked>
-      <name>siteName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>b5731101-a8a5-4fe9-a6f7-97e0abf12e05</id>
-      <masked>false</masked>
-      <name>currentPage</name>
+      <name>site_name</name>
    </variable>
 </TestCaseEntity>

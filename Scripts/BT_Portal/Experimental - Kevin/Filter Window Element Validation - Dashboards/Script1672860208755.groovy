@@ -1,6 +1,10 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject as TestObject
+
+import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.model.FailureHandling
+
 import btt_portal.*
 
 //***************************************************************************
@@ -13,15 +17,21 @@ import btt_portal.*
 //  01/02/2023        Kevin Jackey       Initial Script Creation
 //***************************************************************************
 
-
+//***************** Object Definitions - Multi-Use ********************
+KeywordLogger log = new KeywordLogger()
+Common_Functions element_check = new Common_Functions()
+def error_found = false
+def test_object_path
+def failure_handling = FailureHandling.CONTINUE_ON_FAILURE
+def element_name
+def current_page = "Dashboards"
+ 
+///************************* Perform User Login ************************
 //Determine if login has already occurred by checking for presence of User menu button
 // If not found then Login to BT Portal'
-TestObject userIcon = findTestObject('Object Repository/Common Portal Elements/button_UserMenu')
-
-if (WebUI.verifyElementPresent(userIcon, objectTimeout) == false) {
 	Login userLogin = new Login()
-	userLogin.login(userName, userPassword)
-}
+	userLogin.login(user_name, user_password)
+
 
 ///*********** Validate Dashboard Filter Fields ****************
 
@@ -29,8 +39,8 @@ if (WebUI.verifyElementPresent(userIcon, objectTimeout) == false) {
 Navigation menu = new Navigation()
 
 ///Only select Site if variable is populated
-if (siteName > '') {
-    menu.select_site(siteName)
+if (site_name > '') {
+    menu.select_site(site_name)
 }
 
 ///Open Dashboards Page and set the currentPage variable
@@ -40,35 +50,35 @@ currentPage = "Dashboards"
 
 //Open Filters Menu
 Filters filtersWindow = new Filters()
-filtersWindow.open_filters_window(objectTimeout)
+filtersWindow.open_filters_window(object_timeout)
 
 
 //Validate Dashboard Filter Section
 
 ///General Buttons
-filtersWindow.validate_filters_general_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_general_elements(current_page, object_timeout)
 
 ///Saved Filters Elements
-filtersWindow.validate_filters_savedfilters_elements(objectTimeout)
+filtersWindow.validate_filters_savedfilters_elements(current_page, object_timeout)
 
 
 ///Dashboards Header Section Elements
-filtersWindow.validate_filters_dashboardsheader_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_dashboardsheader_elements(current_page, object_timeout)
 
 //Dashboard Marketing Elements
-filtersWindow.validate_filters_marketing_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_marketing_elements(current_page, object_timeout)
 
 //Dashboard Network Infrastructure Elements
-filtersWindow.validate_filters_networkinfrastructure_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_networkinfrastructure_elements(current_page, object_timeout)
 
 //Dashboard Page Segmentation Elements
-filtersWindow.validate_filters_pagesegmentation_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_pagesegmentation_elements(current_page, object_timeout)
 
 //Dashboard Geography Elements
-filtersWindow.validate_filters_geography_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_geography_elements(current_page, object_timeout)
 
 //Dashboard Advanced Elements
-filtersWindow.validate_filters_advanced_elements(currentPage, objectTimeout)
+filtersWindow.validate_filters_advanced_elements(current_page, object_timeout)
 
 
 

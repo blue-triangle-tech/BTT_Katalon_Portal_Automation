@@ -6,12 +6,11 @@
    <elementGuidId>02a4ea4f-a7df-44e2-94d9-b48c1c0b4bb4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[normalize-space()='Last 24 hours']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//li[normalize-space()='Last 24 Hours']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

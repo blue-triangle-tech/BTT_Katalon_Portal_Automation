@@ -28,6 +28,10 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.chrome.ChromeDriver
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.logging.KeywordLogger
+
+import btt_portal.*
+
 
 public class Login {
 
@@ -37,10 +41,26 @@ public class Login {
 
 	TestObject verify_login_successful = findTestObject('Object Repository/Common Portal Elements/button_menu')
 
-
+	//***************************************************************************
+	 // Function Name: login
+	 //
+	 // Function Overview: Determine if browser window and user session is already open and logged in, if not then perform the browser opening and / or user login step
+	 //
+	 // Function Input Variable(s):
+	 //							element_name - text description of element being validated
+	 //							test_object  - reference to element object (set prior to function call)
+	 //							object_timeout - defined desired object wait timeout
+	 //							failure_handling - Outlines behavior if error is found (either FailureHandling.STOP_ON_FAILURE or FailureHandling.CONTINUE_ON_FAILURE
+	 //							error_found      - Flag for if an error is found [calling section should initialize this to zero at start]
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
 
 	public void login(String username, String password) {
 
+		// Check to see if a browser window is open, if not then open the window and perform a user login
 		try {
 			def x = DriverFactory.getCurrentWindowIndex()
 			if ( ( x != null ) && ( x >= 0 ) ) {

@@ -43,7 +43,22 @@ class Navigation {
 	TestObject menu = findTestObject('Object Repository/Common Portal Elements/button_menu')
 	TestObject settings = findTestObject('Object Repository/Common Portal Elements/button_Settings')
 
-
+	//***************************************************************************
+	// Function Name: select_menu_page
+	//
+	// Function Overview: Selects a desired BT Portal page via the hamburger menu
+	//
+	// Function Input Variable(s):
+	//                            category - High level Hamburger menu category (ex: Dashboards, Real User Monitoring)
+	//							  type - sub-screen classification within the parent category (ex: Real User Monitoring -> Web Browser)
+	//							  page - Individual page classification within the current selected hierarchy (ex: Real User Monitoring -> Web Browser -> Performance Detail)
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
+	
+	
 	public void select_menu_page(String category, String type = null, String page = null) {
 
 		WebUI.click(menu)
