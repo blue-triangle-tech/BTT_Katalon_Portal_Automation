@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Filter Window Element Validation - Broken Links</name>
+   <name>Filter Window Element Validation - Dashboards</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3aade5f5-5647-4b9b-940f-10fe98e29dbd</testCaseGuid>
+   <testCaseGuid>1233d0e8-7fcc-410d-aa9e-981d415f0669</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9ac545db-f815-46f3-ba11-52c761d3d8f2</variableId>
+      <variableId>25bcc17b-6322-4f2c-bc78-15fd99d2b392</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a9e18408-da37-4465-9173-08d84865bb4c</variableId>
+      <variableId>d48bf1c3-1f76-494f-870b-abc279c8c3c6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>37bc6b5a-e602-4ca5-9d68-3702a1011403</variableId>
+      <variableId>5da5656e-f02f-470a-880b-1af9fdb47e4d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>dc189b97-41a8-4dcb-a883-c9834ed7553f</variableId>
+      <variableId>22bcd46e-26c7-46cb-ae9e-c6fde182c0aa</variableId>
    </variableLinks>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>9ac545db-f815-46f3-ba11-52c761d3d8f2</id>
+      <id>25bcc17b-6322-4f2c-bc78-15fd99d2b392</id>
       <masked>false</masked>
       <name>object_timeout</name>
    </variable>
    <variable>
       <defaultValue>'qa.dptviewer02'</defaultValue>
       <description></description>
-      <id>a9e18408-da37-4465-9173-08d84865bb4c</id>
+      <id>d48bf1c3-1f76-494f-870b-abc279c8c3c6</id>
       <masked>false</masked>
       <name>user_name</name>
    </variable>
    <variable>
       <defaultValue>'QApass2022'</defaultValue>
       <description></description>
-      <id>37bc6b5a-e602-4ca5-9d68-3702a1011403</id>
+      <id>5da5656e-f02f-470a-880b-1af9fdb47e4d</id>
       <masked>false</masked>
       <name>user_password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>dc189b97-41a8-4dcb-a883-c9834ed7553f</id>
+      <id>22bcd46e-26c7-46cb-ae9e-c6fde182c0aa</id>
       <masked>false</masked>
       <name>site_name</name>
    </variable>

@@ -147,9 +147,9 @@ public class Filters {
 
 		}
 		
-		//Validate Conversion Type Dropdown Elements for indicated page(s) [Broken Links, ]
+		//Validate Conversion Type Dropdown Elements for indicated page(s) [Broken Links, Out of Stock ]
 		if (
-		(currentPage == "Broken Links")
+		(currentPage == "Broken Links") || (currentPage == "Out of Stock")
 
 		) {
 			element_name = "Conversion Type Dropdown"
@@ -185,9 +185,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Elements for indicated page(s) [Broken Links, ]
+		//Validate Elements for indicated page(s) [Broken Links, Out of Stock ]
 		if (
-		(currentPage == "Broken Links")
+		(currentPage == "Broken Links") || (currentPage == "Out of Stock")
 
 		) {
 			///Buttons Validation
@@ -299,9 +299,9 @@ public class Filters {
 		 //Initialize error tracking variable
 		 error_found = false
  
-		 //Validate Display Options Dropdown Elements for indicated page(s) [Broken Links, ]
+		 //Validate Display Options Dropdown Elements for indicated page(s) [Broken Links, Out of Stock ]
 		 if (
-		 (currentPage == "Broken Links")
+		 (currentPage == "Broken Links") || (currentPage == "Out of Stock")
  
 		 ) {
 			 ///Group Data By Validation
