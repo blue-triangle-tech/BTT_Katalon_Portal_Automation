@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Edge</name>
+   <name>button_DeselectAll</name>
    <tag></tag>
-   <elementGuidId>78cf896f-a620-40be-a98e-4f1dc3601c8e</elementGuidId>
+   <elementGuidId>a89d9264-0df2-4374-8637-3e9b6194c5fe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='edge']</value>
+         <value>//button[@id='deselect-all-icons']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

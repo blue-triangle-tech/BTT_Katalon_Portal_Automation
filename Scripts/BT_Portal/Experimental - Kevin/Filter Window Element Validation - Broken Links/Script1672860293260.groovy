@@ -57,37 +57,20 @@ filtersWindow.validate_filters_savedfilters_elements(current_page, object_timeou
 ///Broken Links Time Period Section Elements
 filtersWindow.validate_filters_timeperiod_elements(current_page, object_timeout)
 
-
-/*
-
 //Broken Links Marketing Elements
-filtersWindow.validate_filters_marketing_elements(currentPage, object_timeout)
-
-//Broken Links Network Infrastructure Elements
-filtersWindow.validate_filters_networkinfrastructure_elements(currentPage, object_timeout)
+filtersWindow.validate_filters_marketing_elements(current_page, object_timeout)
 
 //Broken Links Page Segmentation Elements
-filtersWindow.validate_filters_pagesegmentation_elements(currentPage, object_timeout)
+filtersWindow.validate_filters_pagesegmentation_elements(current_page, object_timeout)
 
-//Broken Links Geography Elements
-filtersWindow.validate_filters_geography_elements(currentPage, object_timeout)
+//Broken Links Browsers and Devices Elements
+filtersWindow.validate_filters_browsers_and_devices_elements(current_page, object_timeout)
+
+//Broken Links Display Options Elements
+filtersWindow.validate_filters_display_options_elements(current_page, object_timeout)
 
 //Broken Links Advanced Elements
-filtersWindow.validate_filters_advanced_elements(currentPage, object_timeout)
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
+filtersWindow.validate_filters_advanced_elements(current_page, object_timeout)
 
 
 

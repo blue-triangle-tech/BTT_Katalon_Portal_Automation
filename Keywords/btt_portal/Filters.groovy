@@ -144,14 +144,90 @@ public class Filters {
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Advanced/link_beaconType_Clear')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
-			//Perform Error Check Validation
-			if (error_found) {
-				KeywordUtil.markFailed ("Issue found in validate_filters_advanced_elements section, please check error log for details")
-			}
+
+		}
+		
+		//Validate Conversion Type Dropdown Elements for indicated page(s) [Broken Links, ]
+		if (
+		(currentPage == "Broken Links")
+
+		) {
+			element_name = "Conversion Type Dropdown"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Advanced/dropdown_ConversionType')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+		}
+		
+		//Perform Error Check Validation
+		if (error_found) {
+			KeywordUtil.markFailed ("Issue found in validate_filters_advanced_elements section, please check error log for details")
 		}
 
 	}
 
+	
+	//***************************************************************************
+	// Function Name: validate_filters_browsers_and_devices_elements
+	//
+	// Function Overview: Validates the presence of all expected Browsers and Devices section filter window elements (Elements appearing based on current page)
+	//
+	// Function Input Variable(s):
+	//                            currentPage - Contains the name of the current page, used for determining if a given field should be present within the current page filter settings
+	//                            object_timeout - Contains the desired object_timeout timeframe specified in the script [if zero then the user's default page load timeout will be used]
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
+
+	public void validate_filters_browsers_and_devices_elements (currentPage, object_timeout) {
+
+		//Initialize error tracking variable
+		error_found = false
+
+		//Validate Elements for indicated page(s) [Broken Links, ]
+		if (
+		(currentPage == "Broken Links")
+
+		) {
+			///Buttons Validation
+			element_name = "Deselect All Button"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_DeselectAll')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+			element_name = "Select All Common Button"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_SelectAllCommon')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			///Common Browsers Buttons
+			element_name = "Facebook Browser"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Facebook')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Chrome Browser"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Chrome')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Firefox Browser"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Firefox')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Safari Browser"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Safari')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Edge Browser"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Edge')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+
+			//Perform Error Check Validation
+			if (error_found) {
+				KeywordUtil.markFailed ("Issue found in validate_filters_browsers_and_devices_elements section, please check error log for details")
+			}
+		}
+
+	}
 
 	//***************************************************************************
 	// Function Name: validate_filters_dashboardsheader_elements
@@ -204,7 +280,43 @@ public class Filters {
 
 		}
 	}
-
+	//***************************************************************************
+	 // Function Name: validate_filters_display_options_elements
+	 //
+	 // Function Overview: Validates the presence of all expected Browsers and Devices section filter window elements (Elements appearing based on current page)
+	 //
+	 // Function Input Variable(s):
+	 //                            currentPage - Contains the name of the current page, used for determining if a given field should be present within the current page filter settings
+	 //                            object_timeout - Contains the desired object_timeout timeframe specified in the script [if zero then the user's default page load timeout will be used]
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
+ 
+	 public void validate_filters_display_options_elements (currentPage, object_timeout) {
+ 
+		 //Initialize error tracking variable
+		 error_found = false
+ 
+		 //Validate Display Options Dropdown Elements for indicated page(s) [Broken Links, ]
+		 if (
+		 (currentPage == "Broken Links")
+ 
+		 ) {
+			 ///Group Data By Validation
+			 element_name = "Group Data By Dropdown"
+			 test_object_path = ('Object Repository/Filters/Main Filter Window/Display Options/dropdown_GroupDataBy')
+			 error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+ 
+			 //Perform Error Check Validation
+			 if (error_found) {
+				 KeywordUtil.markFailed ("Issue found in validate_filters_browsers_and_devices_elements section, please check error log for details")
+			 }
+		 }
+ 
+	 }
+ 
 	//***************************************************************************
 	// Function Name: validate_filters_general_elements
 	//
@@ -337,7 +449,7 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Campaign Name Dropdown Elements for indicated page(s) [Dashboards, ]
+		//Validate Campaign Name Dropdown Elements for indicated page(s) [Dashboards, Broken Links]
 		if (
 		(current_page == "Dashboards")
 
@@ -351,9 +463,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate A/B Testing Segment Dropdown Elements for indicated page(s) [Dashboards, ]
+		//Validate A/B Testing Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links ]
 		if (
-		(current_page == "Dashboards")
+		(current_page == "Dashboards") || (current_page == "Broken Links")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -430,9 +542,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Traffic Segment Dropdown Elements for indicated page(s) [Dashboards, ]
+		//Validate Traffic Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links ]
 		if (
-		(current_page == "Dashboards")
+		(current_page == "Dashboards") || (current_page == "Broken Links")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -619,6 +731,61 @@ public class Filters {
 		element_name = "Custom Range Button"
 		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/button_DateSelector_CustomRange'
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Cancel Button
+		element_name = "Cancel Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/button_DateSelector_Cancel'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Apply Button
+		element_name = "Apply Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/button_DateSelector_Apply'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Start Time Clock Button
+		element_name = "Start Time Clock icon"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/icon_DateSelector_StartTimeClock'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Start Time Hour Dropdown
+		element_name = "Start Time Hour Dropdown Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/dropdown_DateSelector_StartTime_Hour'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Start Time Hour Dropdown
+		element_name = "Start Time Minute Dropdown Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/dropdown_DateSelector_StartTime_Minute'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Start Time Calendar
+		element_name = "Start Time Calendar"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/tblhdr_DateSelector_StartMonth'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate End Time Clock Button
+		element_name = "End Time Clock Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/icon_DateSelector_EndTimeClock'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate End Time Hour Dropdown
+		element_name = "End Time Hour Dropdown Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/dropdown_DateSelector_EndTime_Hour'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate End Time Hour Dropdown
+		element_name = "End Time Minute Dropdown Button"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/dropdown_DateSelector_EndTime_Minute'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate End Time Calendar
+		element_name = "End Time Calendar"
+		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/tblhdr_DateSelector_EndMonth'
+		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Close Timeperiod Section
+		TestObject Cancel_Button = findTestObject('Object Repository/Filters/Main Filter Window/Time Period/icon_TimePeriod_DateSelector')
+		WebUI.click(time_period_icon)
+		
 
 		//Perform Error Check Validation
 		if (error_found) {

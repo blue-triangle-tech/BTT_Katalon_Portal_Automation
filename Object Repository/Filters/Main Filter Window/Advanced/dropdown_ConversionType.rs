@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Edge</name>
+   <name>dropdown_ConversionType</name>
    <tag></tag>
-   <elementGuidId>78cf896f-a620-40be-a98e-4f1dc3601c8e</elementGuidId>
+   <elementGuidId>ee16ab5e-0cf4-44ad-88aa-c7f3f0620a87</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='edge']</value>
+         <value>//select[@id='conversion-type']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

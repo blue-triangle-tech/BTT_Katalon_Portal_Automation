@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//svg[@id='facebook']</value>
+         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='facebook']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

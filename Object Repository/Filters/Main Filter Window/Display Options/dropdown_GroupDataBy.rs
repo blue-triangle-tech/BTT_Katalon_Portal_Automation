@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Edge</name>
+   <name>dropdown_GroupDataBy</name>
    <tag></tag>
-   <elementGuidId>78cf896f-a620-40be-a98e-4f1dc3601c8e</elementGuidId>
+   <elementGuidId>1269f0b1-5755-406a-b096-07f11efcb25b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='filter-section']//*[local-name()='svg' and @id='edge']</value>
+         <value>//select[@id='group-data-by']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
