@@ -60,14 +60,7 @@ report_subjects.add(report_subject)
 
 Automated_Reports report = new Automated_Reports()
 report.select_automated_report('real-user-reports-type', report_type.getValue(1, row))
-report.report_settings(report_name, report_subject, '7', 'hours', 'No')
-
-if (report_type.getValue(1, row) == 'coreMetricsBySite') {
-	TestObject page = new TestObject('page')
-	page.addProperty('text', ConditionType.EQUALS, 'HomePage' )
-	WebUI.click(findTestObject('Object Repository/Automated Reports/Report Filters/filter_pageName'))
-	WebUI.click(page)
-}
+report.report_settings(report_name, report_subject, time_period, time_unit, screenshot)
 report.set_filter(filter, label)
 report.create_report()
 report.generate_report(report_name)

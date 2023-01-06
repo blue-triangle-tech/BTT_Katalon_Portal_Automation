@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'report-bucket-size-row']</value>
+         <value>//*[@id = 'report-bucket-size-value']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>report-bucket-size-row</value>
-      <webElementGuid>11d11f31-10ec-4e12-8671-a2614cb6611f</webElementGuid>
+      <value>report-bucket-size-value</value>
+      <webElementGuid>984a854c-b094-4544-9add-1e824ca9c6a4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
