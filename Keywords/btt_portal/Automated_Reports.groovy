@@ -131,18 +131,27 @@ public class Automated_Reports {
 	//***************************************************************************
 	// Function Name: report_settings
 	//
-	// Function Overview: Clicks the "Create" button to create the report
+	// Function Overview: Clicks the "Create" button to create the report. If a page name is required it selects one and hits create again.
 	//
-	// Function Input Variable(s): None
+	// Function Input Variable(s): page (String, optional) - enter a page name to ensure the report is created if this is required
 	//
 	// Function Output Variable(s): None
 	//
 	// Function Return Value: None
 	//***************************************************************************
 
-	public static create_report() {
+	public static create_report(String page = 'home') {
 
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Create'))
+		
+		if (WebUI.verifyTextNotPresent('Missing page name', true)) {
+			
+		}
+		else {
+			WebUI.click(findTestObject('Object Repository/Automated Reports/OK'))
+			set_filter(findTestObject('Object Repository/Automated Reports/Report Filters/filter_pageName'), page)
+			WebUI.click(findTestObject('Object Repository/Automated Reports/Create'))
+		}
 	}
 
 
