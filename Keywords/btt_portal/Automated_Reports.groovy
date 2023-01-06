@@ -33,7 +33,7 @@ public class Automated_Reports {
 	//
 	// Function Input Variable(s):
 	//
-	// 	report_data_type (String, required) - The "ID" property of the object used to select a rum or synthetic report
+	// 		report_data_type (String, required) - The "ID" property of the object used to select a rum or synthetic report
 	//		report_type (String, required) - The "data-report-type" property of the object used to select a report
 	//
 	//
@@ -65,14 +65,14 @@ public class Automated_Reports {
 	//		Adds a report name
 	//		Adds a subject line for the email
 	//		Sets the time period
-	//     Sets screenshot to "yes" or "no"
-	// 	Clicks "Next"
+	//      Sets screenshot to "yes" or "no"
+	// 		Clicks "Next"
 	//
 	// Function Input Variable(s):
 	//
 	// 	report_name (String, required) - The given name of the report
 	//		subject_line (String, required) - The given subject line of the email
-	//     time_period (String, optional) - The number of hours or days included in the report email (String, but the string should be an integer from 1-31)
+	//      time_period (String, optional) - The number of hours or days included in the report email (String, but the string should be an integer from 1-31)
 	//		time_unit (String, optional) - Sets whether the time period is "hours" or "days" (accepts "hours" or "days")
 	//		screenshot (String, optional) - Sets whether a screenshot is included in the report email (accepts "yes" or "no")
 	//
@@ -250,7 +250,7 @@ public class Automated_Reports {
 	//		Creates a new request object; Sets the rest url and request method
 	//		Defines header properties; Adds the authorization property and sets it equal to the stored access token string
 	//		Sends the request
-	// 	Parses the responses
+	// 		Parses the responses
 	//		Returns the parsed response
 	//
 	// Function Input Variable(s): report_name (String, required) - the name of a report in the reports table
@@ -329,7 +329,7 @@ public class Automated_Reports {
 	// Function Overview: Checks that the report contains (or does not contain) specified contents
 	//		Calls open_report_link and stores the returned string
 	//		If the string is "Email Found" it looks for the report name, a graph or table, and verfies "No data to display" is not present.
-	// 	If the string is "Email Not Found" it skips the above steps and returns the string, "Email generation failed".
+	// 		If the string is "Email Not Found" it skips the above steps and returns the string, "Email generation failed".
 	//
 	// Function Input Variable(s):
 	//		subject_line (String, required) - the subject line of a report email
