@@ -32,7 +32,11 @@ import btt_portal.*
  //		Iterates through each report subject added to the list
  //		Sends a request to get email with the specified subject, extracts the report link, and verifies the report contents using verify_report_contents()
  //
- // Change History: <Insert Change History Table with a username, change date, and change description for each major change made>
+ // Change History: 
+ //		Date: 				User:				Change Made:
+ //		01/06/2022			Gia Esposito		Added set_filter() method with optional parameters; null set as default value for variables (filter, label)
+ //		01/06/2022			Gia Esposito		Created variables with default values (time_period, time_unit, screenshot)
+ //		01/06/2022			Gia Esposito		Removed logic for core metrics by site page selection (handled in create_report() method)
  //***************************************************************************
 
 
