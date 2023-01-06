@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'delete-selected-reports']</value>
+         <value>//*[@id = 'delete-selected-reports' and (text() = 'Delete' or . = 'Delete')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,6 +18,14 @@
       <name>id</name>
       <type>Main</type>
       <value>delete-selected-reports</value>
-      <webElementGuid>550fc368-15e6-4176-a819-c3dbebda9e8f</webElementGuid>
+      <webElementGuid>11098f31-3c4a-4db5-8c85-923935433ecb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Delete</value>
+      <webElementGuid>9b74a69d-5e84-49de-92ab-23386edde503</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -49,7 +49,7 @@ int report_row = report_type.getRowNumbers()
 List report_subjects = []
 
 
-for (int row = 1; row <=3; row++) {
+for (int row = 1; row <=report_row; row++) {
 		
 Time timestamp = new Time()
 String time = timestamp.current_time()

@@ -58,9 +58,15 @@ def setupTestCase() {
 @TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
 	WebUI.navigateToUrl('https://portal.bluetriangle.com/btportal/web/index.php?r=reports/')
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Automated Reports/Page Size'), "all", false)
+	
 	WebUI.click(findTestObject('Object Repository/Automated Reports/Toggle All Reports'))
+	
 	WebUI.click(findTestObject('Object Repository/Automated Reports/Bulk Actions'))
+	
 	WebUI.click(findTestObject('Object Repository/Automated Reports/Bulk Actions_Delete Reports'))
+	
+	WebUI.click(findTestObject('Object Repository/Automated Reports/button_confirmDelete'))
 }
 
 /**
