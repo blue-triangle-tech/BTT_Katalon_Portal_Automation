@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Filter Window Element Validation - Revenue Analysis</name>
+   <name>Filter Window Element Validation - Datatable Driven</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3aade5f5-5647-4b9b-940f-10fe98e29dbd</testCaseGuid>

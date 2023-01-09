@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B3EF1598E5719F61BC97D834C13A4C75",
+  "keywordFileContentHash": "CCC0B6F39474BBEF6BFE8FA2A1AB53E6",
   "keywordClasses": [
     {
       "name": "btt_portal.Navigation",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -157,7 +157,7 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		}
-		
+
 		//Validate Net Speed Dropdown Elements for indicated page(s) [Revenue Analysis, ]
 		if (
 		(current_page == "Revenue Analysis")
@@ -200,7 +200,7 @@ public class Filters {
 
 		//Initialize error tracking variable
 		error_found = false
-		
+
 		//Validate Common Buttons for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis ]
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis")
@@ -219,9 +219,9 @@ public class Filters {
 			if (error_found) {
 				KeywordUtil.markFailed ("Issue found in validate_filters_browsers_and_devices_elements section, please check error log for details")
 			}
-				
+
 		}
-		
+
 		//Validate Common Devices Elements for indicated page(s) [Revenue Analysis ]
 		if (
 		(current_page == "Revenue Analysis")
@@ -240,9 +240,9 @@ public class Filters {
 			element_name = "Desktop Device"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Desktop')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-					
+
 		}
-		
+
 		//Validate Common Operating Systems Elements for indicated page(s) [Revenue Analysis ]
 		if (
 		(current_page == "Revenue Analysis")
@@ -253,23 +253,23 @@ public class Filters {
 			element_name = "Macintosh OS"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Macintosh')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-			
+
 			element_name = "Android OS"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Android')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-			
+
 			element_name = "Windows OS"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Windows')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-			
+
 			element_name = "iOS OS"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_iOS')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-			
+
 			element_name = "Linux OS"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Linux')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-					
+
 		}
 
 		//Validate Common Browsers Elements for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis ]
@@ -298,12 +298,12 @@ public class Filters {
 			element_name = "Edge Browser"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/button_Edge')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-					
+
 		}
-		
+
 		//Validate Browser/OS/Browser Version Dropdown for indicated page(s) [Revenue Analysis ]
 		if (
-			(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis")
 
 		) {
 
@@ -314,12 +314,12 @@ public class Filters {
 			element_name = "Browser/OS/Browser Version Clear Link"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/link_BrowserOSBrowserVersion_Clear')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-					
+
 		}
-		
+
 		//Validate Bot Traffic Radios for indicated page(s) [Revenue Analysis ]
 		if (
-			(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis")
 
 		) {
 			element_name = "Include Bots Radio"
@@ -329,12 +329,12 @@ public class Filters {
 			element_name = "Exclude Bots Radio"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/radio_ExcludeBots')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
-			
+
 			element_name = "Bots Only Radio"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Browsers and Devices/radio_BotsOnly')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
-		
+
 		//Perform Error Check Validation
 		if (error_found) {
 			KeywordUtil.markFailed ("Issue found in validate_filters_browsers_and_devices_elements section, please check error log for details")
@@ -675,7 +675,7 @@ public class Filters {
 		if (error_found) {
 			KeywordUtil.markFailed ("Issue found in validate_filters_networkinfrastructure_elements section, please check error log for details")
 		}
-		
+
 		//Validate ISP / Organization Location Dropdown Elements for indicated page(s) [Revenue Analysis, ]
 		if (
 		(current_page == "Revenue Analysis")
@@ -768,8 +768,8 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate and select Saved Filters Button
-		element_name = "and Click General Filter Saved Filters Button"
+		//Validate and select Saved Filters Button and Click General Filter Saved Filters Button
+		element_name = "Saved Filters Button"
 		test_object_path = 'Object Repository/Filters/Main Filter Window/General Items/SavedFilters/button_SavedFilters'
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
@@ -803,7 +803,7 @@ public class Filters {
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		//Validate and select Close Button
-		element_name = "and select Saved Filters Close Button"
+		element_name = "Saved Filters Close Button"
 		test_object_path = 'Object Repository/Filters/Main Filter Window/General Items/SavedFilters/button_SavedFilters_Close'
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
