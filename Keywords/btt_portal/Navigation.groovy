@@ -39,13 +39,14 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 class Navigation {
-	
+
+
 	//***************** Object Definitions ********************\\
-	
+
 	//Create Test Object Definitions - Common Portal Elements
 	TestObject menu = findTestObject('Object Repository/Common Portal Elements/button_menu')
 	TestObject settings = findTestObject('Object Repository/Common Portal Elements/button_Settings')
-	
+
 	//***************** Function Library ********************\\
 
 	//***************************************************************************

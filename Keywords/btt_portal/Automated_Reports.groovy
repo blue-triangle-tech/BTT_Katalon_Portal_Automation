@@ -100,32 +100,32 @@ public class Automated_Reports {
 
 	public static report_type() {
 	}
-	
+
 	//***************************************************************************
-	 // Function Name: set_filter
-	 //
-	 // Function Overview: Sets a filter value in the report configuration
-	 //		Checks if a filter object is added as an input variable
-	 //		Sets the filter option by label
-	 //
-	 // Function Input Variable(s):
-	 //
-	 // 	filter (TestObject, optional) - The test object for the filter you want to set
-	 //		label (String, optional) - The label of the item you want to select in the filter
-	 //
-	 //
-	 // Function Output Variable(s): None
-	 //
-	 // Function Return Value: None
-	 //***************************************************************************
+	// Function Name: set_filter
+	//
+	// Function Overview: Sets a filter value in the report configuration
+	//		Checks if a filter object is added as an input variable
+	//		Sets the filter option by label
+	//
+	// Function Input Variable(s):
+	//
+	// 	filter (TestObject, optional) - The test object for the filter you want to set
+	//		label (String, optional) - The label of the item you want to select in the filter
+	//
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
 
 	public static set_filter(TestObject filter = null, String label = null) {
-		
+
 		if (filter != null) {
 
-		WebUI.selectOptionByLabel(filter, label, true)
+			WebUI.selectOptionByLabel(filter, label, true)
 
-	}
+		}
 	}
 
 	//***************************************************************************
@@ -143,9 +143,9 @@ public class Automated_Reports {
 	public static create_report(String page = 'home') {
 
 		WebUI.click(findTestObject('Object Repository/Automated Reports/Create'))
-		
+
 		if (WebUI.verifyTextNotPresent('Missing page name', true)) {
-			
+
 		}
 		else {
 			WebUI.click(findTestObject('Object Repository/Automated Reports/OK'))

@@ -1,9 +1,7 @@
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import btt_helper.*
@@ -72,12 +70,27 @@ report.generate_report(report_name)
 }
 WebUI.delay(30)
 int data_row = 1
+List results = []
 for (subject in report_subjects) {
 
 	String report_name = subject.replaceAll(" for: " + site, "")
 
 	Automated_Reports report1 = new Automated_Reports()
-	report1.verify_report_contents(subject, report_name, data_row)
-	data_row++
+	String result = report1.verify_report_contents(subject, report_name, data_row)
 	
+	if (result != "Report generation passed") {
+		
+		results.add(report_name + ": " + result)
+	}
+	
+	data_row++
+}
+
+if (results.isEmpty() == false) {
+	
+	for (result in results) {
+		
+		KeywordUtil.logInfo(result)
+	}
+
 }

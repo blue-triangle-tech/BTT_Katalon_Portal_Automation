@@ -15,7 +15,7 @@
       <guid>00f39f24-9331-4078-a9d3-5c64b4c568f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - 95th Percentile</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - 95th Percentile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -34,7 +34,7 @@
       <guid>f927e33a-bd76-48cb-9ffd-6e0c500cc8f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Browser_Version</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Browser_Version</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -53,7 +53,7 @@
       <guid>d0dacfaa-a9c0-441b-aa23-2926e8bc2f6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Bucket Size - Days</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Bucket Size - Days</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -72,7 +72,7 @@
       <guid>4613e5cf-8e96-44fe-a70c-c27626787461</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Bucket Size - Hours</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Bucket Size - Hours</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -91,7 +91,7 @@
       <guid>31583c89-bed4-4aa5-bfe3-6242390626e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Bucket Size - Minutes</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Bucket Size - Minutes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -110,7 +110,7 @@
       <guid>5ce6ce11-9950-472f-9f00-047f0be7748c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Content Group_Page Group</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Content Group_Page Group</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -129,7 +129,7 @@
       <guid>6cc0988d-8676-4b6f-8b1d-bb1b7fbd3748</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Country</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Country</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -148,7 +148,7 @@
       <guid>cf9e922a-1a70-4a71-8db8-d17a547483e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Granularity</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Granularity</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -173,7 +173,7 @@
       <guid>b6d950d2-9df1-4126-a386-f355d39cc700</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Include Screenshot</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Include Screenshot</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -192,7 +192,7 @@
       <guid>4e6782e8-d69d-4602-9a40-3212dc0acf86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Net Speed</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Net Speed</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -211,7 +211,7 @@
       <guid>e77e0449-5a74-41a1-bdca-f18e30dc2c84</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Region</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Region</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -230,7 +230,7 @@
       <guid>425d5816-c5c0-4f7c-8483-7c0bd19eb841</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Real User Report - Traffic Segment Filter</testCaseId>
+      <testCaseId>Test Cases/BT_Portal/Menu/Automated Reports/Real User Reports/Deprecated/Real User Report - Traffic Segment Filter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

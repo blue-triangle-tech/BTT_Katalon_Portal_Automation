@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "598150967689301B9250E9A4AAF92AE4",
+  "keywordFileContentHash": "A3CF0A4AF858D3CAED8B17B3151B743A",
   "keywordClasses": [
     {
       "name": "btt_portal.Executive_Reports_Crux",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
