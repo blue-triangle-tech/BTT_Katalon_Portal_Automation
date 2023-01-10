@@ -8,6 +8,12 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.interactions.Actions as Actions
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
 import btt_portal.*
 
@@ -17,9 +23,39 @@ public class Common_Functions {
 
 	//***************** Object Definitions - Multi-Use ********************
 	KeywordLogger log = new KeywordLogger()
+	
+	//***************************************************************************
+	 // Function Name: click_using_JS
+	 //
+	 // Function Overview: Uses Javascript logic to click an element
+	 //
+	 // Function Input Variable(s):
+	 //							element_name - text description of element being validated
+	 //							test_object  - reference to element object (set prior to function call)
+	 //							object_timeout - defined desired object wait timeout
+	 //							failure_handling - Outlines behavior if error is found (either FailureHandling.STOP_ON_FAILURE or FailureHandling.CONTINUE_ON_FAILURE
+	 //							error_found      - Flag for if an error is found [calling section should initialize this to zero at start]
+	 //
+	 // Function Output Variable(s): None
+	 //
+	 // Function Return Value: None
+	 //***************************************************************************
+	public void click_using_JS (element_name, test_object_path, object_timeout) {
+		log.logInfo('Using click_using_JS function to click object ' + element_name)
+		
+		//Define Test Object to click
+		TestObject this_object = findTestObject(test_object_path)
+	
+		//Click object using JS
+		WebDriver driver = DriverFactory.getWebDriver()
+		WebElement element = WebUiCommonHelper.findWebElement(this_object, object_timeout)
+		JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+		executor.executeScript('arguments[0].click()', element)
+	}
+	
 
 	//***************************************************************************
-	// Function Name: open_filters_window
+	// Function Name: validate_object_exists
 	//
 	// Function Overview: Check to see if the indicated object exists, if not set an error flag
 	//

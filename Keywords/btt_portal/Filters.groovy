@@ -158,9 +158,9 @@ public class Filters {
 
 		}
 
-		//Validate Net Speed Dropdown Elements for indicated page(s) [Revenue Analysis, ]
+		//Validate Net Speed Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Net Speed Dropdown"
@@ -201,9 +201,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Common Buttons for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis ]
+		//Validate Common Buttons for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis")
+		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			///Buttons Validation
@@ -222,9 +222,9 @@ public class Filters {
 
 		}
 
-		//Validate Common Devices Elements for indicated page(s) [Revenue Analysis ]
+		//Validate Common Devices Elements for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 
@@ -243,9 +243,9 @@ public class Filters {
 
 		}
 
-		//Validate Common Operating Systems Elements for indicated page(s) [Revenue Analysis ]
+		//Validate Common Operating Systems Elements for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 
@@ -272,9 +272,9 @@ public class Filters {
 
 		}
 
-		//Validate Common Browsers Elements for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis ]
+		//Validate Common Browsers Elements for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis")
+		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 
@@ -301,9 +301,9 @@ public class Filters {
 
 		}
 
-		//Validate Browser/OS/Browser Version Dropdown for indicated page(s) [Revenue Analysis ]
+		//Validate Browser/OS/Browser Version Dropdown for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 
@@ -317,9 +317,9 @@ public class Filters {
 
 		}
 
-		//Validate Bot Traffic Radios for indicated page(s) [Revenue Analysis ]
+		//Validate Bot Traffic Radios for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Include Bots Radio"
@@ -509,9 +509,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Country Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis ]
+		//Validate Country Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Country Dropdown"
@@ -523,9 +523,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Region for indicated page(s) [Dashboards, Revenue Analysis ]
+		//Validate Region for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Region Dropdown"
@@ -562,9 +562,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Traffic Source / Referrer Dropdown Elements for indicated page(s) [Revenue Analysis]
+		//Validate Traffic Source / Referrer Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
@@ -576,9 +576,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Traffic Medium Dropdown Elements for indicated page(s) [Revenue Analysis]
+		//Validate Traffic Medium Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -590,9 +590,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Campaign Name Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis]
+		//Validate Campaign Name Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis]
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Campaign Name Dropdown"
@@ -604,9 +604,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate A/B Testing Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis ]
+		//Validate A/B Testing Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -618,9 +618,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Visitor Type Dropdown Elements for indicated page(s) [Revenue Analysis]
+		//Validate Visitor Type Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -657,9 +657,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Datacenter Location Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis ]
+		//Validate Datacenter Location Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis] ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -676,9 +676,9 @@ public class Filters {
 			KeywordUtil.markFailed ("Issue found in validate_filters_networkinfrastructure_elements section, please check error log for details")
 		}
 
-		//Validate ISP / Organization Location Dropdown Elements for indicated page(s) [Revenue Analysis, ]
+		//Validate ISP / Organization Location Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis] ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "ISP / Organization Dropdown"
@@ -716,9 +716,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Traffic Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis ]
+		//Validate Traffic Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -730,9 +730,9 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Content / Page Groups Elements for indicated page(s) [Dashboards, Revenue Analysis ]
+		//Validate Content / Page Groups Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Content / Page Groups Dropdown"
@@ -959,10 +959,21 @@ public class Filters {
 		//Close Timeperiod Section
 		TestObject Cancel_Button = findTestObject('Object Repository/Filters/Main Filter Window/Time Period/icon_TimePeriod_DateSelector')
 		WebUI.click(time_period_icon)
-
-		//Validate Data Type Dropdown Elements for indicated page(s) [Revenue Analysis, ]
+		
+		//Validate Timezone Dropdown Element for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+			(current_page == "Brand Analysis")
+
+		) {
+			element_name = "TimeZone Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/dropdown_Timezone'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+		}
+
+		//Validate Data Type Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis ]
+		if (
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Data Type Dropdown"
@@ -971,9 +982,9 @@ public class Filters {
 
 		}
 
-		//Validate Bucket Size Dropdown Elements for indicated page(s) [Revenue Analysis, ]
+		//Validate Bucket Size Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis ]
 		if (
-		(current_page == "Revenue Analysis")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis")
 
 		) {
 			element_name = "Bucket Size Dropdown"

@@ -121,6 +121,7 @@ for (int current_row = 1; current_row <= max_datatable_rows; current_row++) {
 
 			//Throw error message if there was an issue finding the indicated object
 			if (error_found) {
+				log.logError ("Issue found in detecting the " + element_name + " object")
 				KeywordUtil.markFailed ("Issue found in detecting the " + element_name + " object")
 			}
 			
