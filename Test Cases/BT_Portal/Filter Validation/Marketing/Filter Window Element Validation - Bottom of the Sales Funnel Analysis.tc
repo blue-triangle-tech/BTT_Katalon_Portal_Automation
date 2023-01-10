@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Filter Window Element Validation - Brand Customer Journey Analysis</name>
+   <name>Filter Window Element Validation - Bottom of the Sales Funnel Analysis</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2d8ac1b2-6bab-4c79-948a-9940b7f3a852</testCaseGuid>
+   <testCaseGuid>257a481c-6415-4836-9577-4bdda0018fad</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f3fa5156-825d-44ac-815c-f6ecd57745aa</variableId>
+      <variableId>9bcdf5e4-5e5b-4bdf-ae73-1f28f520f859</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bcc2218e-f6f1-4187-bd55-a0b6f90da812</variableId>
+      <variableId>ffba140c-ed4e-4ccd-a815-16c672827308</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bd7dc43b-6d1e-419a-baef-bed06d5f9304</variableId>
+      <variableId>393bb642-d8a7-4e20-a9a0-4d4929378c6b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>73216f6f-1afa-4c65-be3b-76a2b7e39399</variableId>
+      <variableId>20039bbd-9d84-4b6a-a6ee-ba1143fe8415</variableId>
    </variableLinks>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>f3fa5156-825d-44ac-815c-f6ecd57745aa</id>
+      <id>9bcdf5e4-5e5b-4bdf-ae73-1f28f520f859</id>
       <masked>false</masked>
       <name>object_timeout</name>
    </variable>
    <variable>
       <defaultValue>'qa.gdcdptviewer'</defaultValue>
       <description></description>
-      <id>bcc2218e-f6f1-4187-bd55-a0b6f90da812</id>
+      <id>ffba140c-ed4e-4ccd-a815-16c672827308</id>
       <masked>false</masked>
       <name>user_name</name>
    </variable>
    <variable>
       <defaultValue>'QApass2022'</defaultValue>
       <description></description>
-      <id>bd7dc43b-6d1e-419a-baef-bed06d5f9304</id>
+      <id>393bb642-d8a7-4e20-a9a0-4d4929378c6b</id>
       <masked>false</masked>
       <name>user_password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>73216f6f-1afa-4c65-be3b-76a2b7e39399</id>
+      <id>20039bbd-9d84-4b6a-a6ee-ba1143fe8415</id>
       <masked>false</masked>
       <name>site_name</name>
    </variable>

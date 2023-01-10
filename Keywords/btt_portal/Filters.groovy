@@ -133,7 +133,7 @@ public class Filters {
 
 		//Validate Beacon Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "My Campaigns")
+		(current_page == "Dashboards") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Beacon Type Dropdown"
@@ -257,7 +257,7 @@ public class Filters {
 		//Validate Common Buttons for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			///Buttons Validation
@@ -279,7 +279,7 @@ public class Filters {
 		//Validate Common Devices Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 
@@ -301,7 +301,7 @@ public class Filters {
 		//Validate Common Operating Systems Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 
@@ -541,6 +541,16 @@ public class Filters {
 		element_name = "General Filter Collapse All Link"
 		test_object_path = 'Object Repository/Filters/Main Filter Window/General Items/link_CollapseAll'
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Validate Path Name Elements for indicated pages
+		if (
+			(current_page == "Bottom of the Sales Funnel Analysis")
+
+		) {
+			element_name = "Path Name Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Bottom of The Sales Funnel/dropdown_PathName'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		}
 
 		//Perform Error Check Validation
 		if (error_found) {
@@ -570,8 +580,8 @@ public class Filters {
 
 		//Validate Country Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Country Dropdown"
@@ -585,8 +595,8 @@ public class Filters {
 
 		//Validate Region for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Region Dropdown"
@@ -636,7 +646,7 @@ public class Filters {
 		//Validate Traffic Source / Referrer Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
@@ -651,7 +661,7 @@ public class Filters {
 		//Validate Traffic Medium Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -666,7 +676,7 @@ public class Filters {
 		//Validate Campaign Name Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Campaign Name Dropdown"
@@ -681,7 +691,7 @@ public class Filters {
 		//Validate A/B Testing Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -696,7 +706,7 @@ public class Filters {
 		//Validate Visitor Type Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -736,7 +746,7 @@ public class Filters {
 		//Validate Datacenter Location Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -797,7 +807,7 @@ public class Filters {
 		//Validate Traffic Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -1118,7 +1128,7 @@ public class Filters {
 		//Validate Timezone Dropdown Element for indicated pages
 		if (
 			(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "TimeZone Dropdown"
