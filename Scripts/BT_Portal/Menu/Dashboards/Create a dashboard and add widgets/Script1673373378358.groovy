@@ -16,29 +16,33 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import btt_helper.*
 import btt_portal.*
+
 
 Login user_login = new Login()
 user_login.login(username, System.getenv('BTT_Automation_Pass'))
 
 Navigation menu = new Navigation()
+menu.select_site(site)
 menu.select_menu_page('dashboard-li', null, null)
 
-for (int x = 0; x<=75; x++) {
-	
-WebUI.click(findTestObject('Object Repository/Dashboards/button_AddDashboard'))
+Time timestamp = new Time()
+String time = timestamp.current_time()
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboards/input_Me_clone-dashboards-checkbox'))
+TestData widget_data_file = findTestData('Data Files/Dashboard Widget Types')
+String widget_data_type = widget_data_file.getValue(column, 1)
+String dashboard_name = widget_data_type + time
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboards/button_Clone'))
+Dashboards dashboard = new Dashboards()
+dashboard.create_dashboard(dashboard_name)
 
-WebUI.click(findTestObject('Object Repository/Dashboards/Create Dashboard/button_SelectUser'))
+int dashboard_row = widget_data_file.getRowNumbers()
+for (int row = 2; row <= dashboard_row; row++ ) {
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboards/li_(Myself)'))
+String widget_graph_type = widget_data_file.getValue(column, row)
+String widget_name = widget_graph_type + time
 
-WebUI.click(findTestObject('Object Repository/Dashboards/Create Dashboard/button_SelectUser'))
-
-WebUI.click(findTestObject('Object Repository/Page_Dashboards/button_Clone Dashboard'))
-
-
+dashboard.create_dashboard_widget(widget_data_type, widget_graph_type, widget_name)
+dashboard.verify_widget_loads(widget_graph_type, widget_name, site)
 }

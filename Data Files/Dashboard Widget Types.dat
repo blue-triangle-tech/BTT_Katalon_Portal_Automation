@@ -3,7 +3,7 @@
    <description></description>
    <name>Dashboard Widget Types</name>
    <tag></tag>
-   <containsHeaders>true</containsHeaders>
+   <containsHeaders>false</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f96bd3a0-d383-431b-a9f9-def149ab2ab9</dataFileGUID>
    <dataSourceUrl>Data Files/Dashboard widgets.xlsx</dataSourceUrl>

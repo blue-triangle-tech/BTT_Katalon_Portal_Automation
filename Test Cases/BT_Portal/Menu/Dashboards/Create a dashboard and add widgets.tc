@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create a dashboard and add widgets</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e95acb94-3919-414e-8232-4cb8ea91544f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9a14fcd7-a1dc-446a-8170-3c5eed209c17</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>661c5c2f-0b06-441c-9564-7acba0db87ac</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86de8b4b-8820-497b-b88e-6b064246c7df</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>9a14fcd7-a1dc-446a-8170-3c5eed209c17</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>661c5c2f-0b06-441c-9564-7acba0db87ac</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>86de8b4b-8820-497b-b88e-6b064246c7df</id>
+      <masked>false</masked>
+      <name>column</name>
+   </variable>
+</TestCaseEntity>

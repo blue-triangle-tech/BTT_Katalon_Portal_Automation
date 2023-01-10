@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Dashboard widget text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a39f3c4b-ee54-4017-8064-5765d8a0dea8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b4d5c363-06f7-4c66-a189-8a93e9285f47</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b4d5c363-06f7-4c66-a189-8a93e9285f47</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
