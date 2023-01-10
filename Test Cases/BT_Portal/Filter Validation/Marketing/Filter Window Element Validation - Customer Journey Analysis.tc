@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Filter Window Element Validation - My Campaigns</name>
+   <name>Filter Window Element Validation - Customer Journey Analysis</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2d8ac1b2-6bab-4c79-948a-9940b7f3a852</testCaseGuid>
+   <testCaseGuid>2e718dac-e0f2-4718-a129-111a4121970b</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f3fa5156-825d-44ac-815c-f6ecd57745aa</variableId>
+      <variableId>6dd4ac48-4e7e-499d-b05b-0b1c847ce7f9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bcc2218e-f6f1-4187-bd55-a0b6f90da812</variableId>
+      <variableId>4edec9dd-7410-46be-9acb-283536535ae6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bd7dc43b-6d1e-419a-baef-bed06d5f9304</variableId>
+      <variableId>fb956525-d2e9-4efa-9408-3a6192f2d0cf</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>73216f6f-1afa-4c65-be3b-76a2b7e39399</variableId>
+      <variableId>4c30fbec-0e98-4532-9026-c0e1ac8416f5</variableId>
    </variableLinks>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>f3fa5156-825d-44ac-815c-f6ecd57745aa</id>
+      <id>6dd4ac48-4e7e-499d-b05b-0b1c847ce7f9</id>
       <masked>false</masked>
       <name>object_timeout</name>
    </variable>
    <variable>
       <defaultValue>'qa.gdcdptviewer'</defaultValue>
       <description></description>
-      <id>bcc2218e-f6f1-4187-bd55-a0b6f90da812</id>
+      <id>4edec9dd-7410-46be-9acb-283536535ae6</id>
       <masked>false</masked>
       <name>user_name</name>
    </variable>
    <variable>
       <defaultValue>'QApass2022'</defaultValue>
       <description></description>
-      <id>bd7dc43b-6d1e-419a-baef-bed06d5f9304</id>
+      <id>fb956525-d2e9-4efa-9408-3a6192f2d0cf</id>
       <masked>false</masked>
       <name>user_password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>73216f6f-1afa-4c65-be3b-76a2b7e39399</id>
+      <id>4c30fbec-0e98-4532-9026-c0e1ac8416f5</id>
       <masked>false</masked>
       <name>site_name</name>
    </variable>

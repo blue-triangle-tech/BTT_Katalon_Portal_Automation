@@ -7,7 +7,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import btt_portal.*
 
 //***************************************************************************
-// Script Name: Filter Window Element Validation - My Campaigns Page
+// Script Name: Filter Window Element Validation - Customer Journey Analysis Page
 //
 // Script Overview: Opens a new browser window, then iterates page by page through the portal filter options to validate that the expected Filter Fields are present for the given user
 //
@@ -24,7 +24,7 @@ def error_found = false
 def test_object_path
 def failure_handling
 def element_name
-def current_page = "My Campaigns"
+def current_page = "Customer Journey Analysis"
 
 ///************************* Perform User Login ************************
 //Determine if login has already occurred by checking for presence of User menu button
@@ -32,9 +32,9 @@ def current_page = "My Campaigns"
 	Login userLogin = new Login()
 	userLogin.login(user_name, user_password)
 
-///*********** Validate My Campaigns Filter Fields ****************
+///*********** Validate Customer Journey Analysis Filter Fields ****************
 
-//Navigate to the My Campaigns page
+//Navigate to the Customer Journey Analysis page
 Navigation menu = new Navigation()
 
 ///Only select Site if variable is populated
@@ -42,15 +42,15 @@ if (site_name > '') {
     menu.select_site(site_name)
 }
 
-///Open My Campaigns Page and set the currentPage variable
-menu.select_menu_page('marketing-insights-li', null, 'My Campaigns')
+///Open Customer Journey Analysis Page and set the currentPage variable
+menu.select_menu_page('marketing-insights-li', null, 'Customer Journey Analysis')
 
 //Open Filters Menu
 Filters filtersWindow = new Filters()
 filtersWindow.open_filters_window(object_timeout)
 
 
-//Validate My Campaigns Filter Sections
+//Validate Customer Journey Analysis Filter Sections
 
 ///General Buttons
 filtersWindow.validate_filters_general_elements(current_page, object_timeout)
@@ -58,27 +58,23 @@ filtersWindow.validate_filters_general_elements(current_page, object_timeout)
 ///Saved Filters Elements
 filtersWindow.validate_filters_savedfilters_elements(current_page, object_timeout)
 
-///My Campaigns Time Period Section Elements
-//filtersWindow.validate_filters_timeperiod_elements(current_page, object_timeout)
+///Customer Journey Analysis Time Period Section Elements
+filtersWindow.validate_filters_timeperiod_elements(current_page, object_timeout)
 
-//My Campaigns Marketing Elements
+//Customer Journey Analysis Marketing Elements
 filtersWindow.validate_filters_marketing_elements(current_page, object_timeout)
 
-//My Campaigns Network Infrastructure Elements
+//Customer Journey Analysis Network Infrastructure Elements
 filtersWindow.validate_filters_networkinfrastructure_elements(current_page, object_timeout)
 
-//My Campaigns Page Segmentation Elements
+//Customer Journey Analysis Page Segmentation Elements
 filtersWindow.validate_filters_pagesegmentation_elements(current_page, object_timeout)
 
-//My Campaigns Browsers and Devices Elements
+//Customer Journey Analysis Browsers and Devices Elements
 filtersWindow.validate_filters_browsers_and_devices_elements(current_page, object_timeout)
 
-//My Campaigns Geography  Elements
+//Customer Journey Analysis Geography  Elements
 filtersWindow.validate_filters_geography_elements(current_page, object_timeout)
 
-//My Campaigns Advanced Elements
+//Customer Journey Analysis Advanced Elements
 filtersWindow.validate_filters_advanced_elements(current_page, object_timeout)
-
-
-
-

@@ -195,14 +195,35 @@ public class Filters {
 
 		}
 
-
 		//Validate Discard Sessions Over Dropdown Elements for indicated pages
 		if (
 		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
-			element_name = "Discard Sessions Over"
+			element_name = "Discard Sessions Over Dropdown"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Business Pages/dropdown_DiscardSessionsOver')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		}
+		
+		//Validate Customer Journey Specific Elements for indicated pages
+		if (
+		(current_page == "Customer Journey Analysis")
+
+		) {
+			element_name = "Maximum Exit Rate Threshold Input"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/input_MaximumExitRateThreshold')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Maximum Onload Threshold Input"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/input_MaximumOnloadThreshold')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Display Campaigns with Session Count Greater Than Input"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/input_DisplayCampaignsWithSessionCountGreaterThan')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Remainder Dropdown"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_Remainder')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
@@ -236,7 +257,7 @@ public class Filters {
 		//Validate Common Buttons for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			///Buttons Validation
@@ -258,7 +279,7 @@ public class Filters {
 		//Validate Common Devices Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 
@@ -280,7 +301,7 @@ public class Filters {
 		//Validate Common Operating Systems Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 
@@ -310,7 +331,7 @@ public class Filters {
 		//Validate Common Browsers Elements for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 
@@ -550,7 +571,7 @@ public class Filters {
 		//Validate Country Dropdown Elements for indicated pages
 		if (
 		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Country Dropdown"
@@ -565,7 +586,7 @@ public class Filters {
 		//Validate Region for indicated pages
 		if (
 		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Region Dropdown"
@@ -601,11 +622,21 @@ public class Filters {
 
 		//Initialize error tracking variable
 		error_found = false
+		
+		//Validate Campaign Name Dropdown Elements for indicated pages
+		if (
+			(current_page == "Customer Journey Analysis")
+
+		) {
+			element_name = "Campaign Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_Campaign'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		}
 
 		//Validate Traffic Source / Referrer Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
@@ -619,8 +650,8 @@ public class Filters {
 
 		//Validate Traffic Medium Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -634,8 +665,8 @@ public class Filters {
 
 		//Validate Campaign Name Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Campaign Name Dropdown"
@@ -649,8 +680,8 @@ public class Filters {
 
 		//Validate A/B Testing Segment Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -664,8 +695,8 @@ public class Filters {
 
 		//Validate Visitor Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -704,8 +735,8 @@ public class Filters {
 
 		//Validate Datacenter Location Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -724,8 +755,8 @@ public class Filters {
 
 		//Validate ISP / Organization Location Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "ISP / Organization Dropdown"
@@ -765,8 +796,8 @@ public class Filters {
 
 		//Validate Traffic Segment Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -780,8 +811,8 @@ public class Filters {
 
 		//Validate Content / Page Groups Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Content / Page Groups Dropdown"
@@ -795,7 +826,7 @@ public class Filters {
 
 		//Validate Page Name Elements for indicated pages
 		if (
-		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator") || (current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator") || (current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Page Name Dropdown"
@@ -811,6 +842,28 @@ public class Filters {
 				error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 			}
 
+		}
+		
+		//Validate Customer Journey Specific Dropdown Elements for indicated pages
+		if (
+			(current_page == "Customer Journey Analysis")
+
+		) {
+			element_name = "Path Rank Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_PathRank'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+			element_name = "Filter By Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_FilterBy'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Landing Page Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_LandingPage'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			element_name = "Focal Page Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_FocalPage'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
 		//Perform Error Check Validation
@@ -966,9 +1019,18 @@ public class Filters {
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		//Validate Custom Date Range - Last Month
-		element_name = "Last Month Button"
-		test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/button_DateSelector_LastMonth'
-		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		
+		//Skip for the indicated pages
+		if (
+			(current_page == "Customer Journey Analysis")
+
+		) {
+		} else {
+			element_name = "Last Month Button"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/DateSelector/button_DateSelector_LastMonth'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		}
+
 
 		//Validate Custom Date Range - Custom Range
 		element_name = "Custom Range Button"
@@ -1032,7 +1094,8 @@ public class Filters {
 
 		//Validate Data Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "Data Type Dropdown"
@@ -1040,10 +1103,22 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		}
+		
+		//Validate Auto Refresh Start Time Anchor Dropdown Elements for indicated pages
+		if (
+			(current_page == "Customer Journey Analysis")
+
+		) {
+			element_name = "Auto Refresh Start Time Anchor Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_AutoRefreshStartTimeAnchor'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+		}
 
 		//Validate Timezone Dropdown Element for indicated pages
 		if (
-		(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+			(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+			(current_page == "Customer Journey Analysis")
 
 		) {
 			element_name = "TimeZone Dropdown"
@@ -1054,11 +1129,22 @@ public class Filters {
 
 		//Validate Bucket Size Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Bucket Size Dropdown"
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/dropdown_BucketSize'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+		}
+		
+		//Validate Selected Metric Dropdown Elements for indicated pages
+		if (
+			(current_page == "Customer Journey Analysis")
+
+		) {
+			element_name = "Selected Metric Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Time Period/dropdown_SelectedMetric'
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		}
