@@ -207,7 +207,7 @@ public class Filters {
 		
 		//Validate Customer Journey Specific Elements for indicated pages
 		if (
-		(current_page == "Customer Journey Analysis")
+		(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Maximum Exit Rate Threshold Input"
@@ -257,7 +257,7 @@ public class Filters {
 		//Validate Common Buttons for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			///Buttons Validation
@@ -279,7 +279,7 @@ public class Filters {
 		//Validate Common Devices Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 
@@ -301,7 +301,7 @@ public class Filters {
 		//Validate Common Operating Systems Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 
@@ -331,7 +331,7 @@ public class Filters {
 		//Validate Common Browsers Elements for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 
@@ -571,7 +571,7 @@ public class Filters {
 		//Validate Country Dropdown Elements for indicated pages
 		if (
 		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Country Dropdown"
@@ -586,7 +586,7 @@ public class Filters {
 		//Validate Region for indicated pages
 		if (
 		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Region Dropdown"
@@ -625,7 +625,7 @@ public class Filters {
 		
 		//Validate Campaign Name Dropdown Elements for indicated pages
 		if (
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Campaign Dropdown"
@@ -636,7 +636,7 @@ public class Filters {
 		//Validate Traffic Source / Referrer Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
@@ -651,7 +651,7 @@ public class Filters {
 		//Validate Traffic Medium Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -681,7 +681,7 @@ public class Filters {
 		//Validate A/B Testing Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -696,7 +696,7 @@ public class Filters {
 		//Validate Visitor Type Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -736,7 +736,7 @@ public class Filters {
 		//Validate Datacenter Location Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -797,7 +797,7 @@ public class Filters {
 		//Validate Traffic Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -846,7 +846,7 @@ public class Filters {
 		
 		//Validate Customer Journey Specific Dropdown Elements for indicated pages
 		if (
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Path Rank Dropdown"
@@ -1022,7 +1022,7 @@ public class Filters {
 		
 		//Skip for the indicated pages
 		if (
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 		} else {
@@ -1095,7 +1095,7 @@ public class Filters {
 		//Validate Data Type Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Data Type Dropdown"
@@ -1106,7 +1106,7 @@ public class Filters {
 		
 		//Validate Auto Refresh Start Time Anchor Dropdown Elements for indicated pages
 		if (
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Auto Refresh Start Time Anchor Dropdown"
@@ -1118,7 +1118,7 @@ public class Filters {
 		//Validate Timezone Dropdown Element for indicated pages
 		if (
 			(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "TimeZone Dropdown"
@@ -1140,7 +1140,7 @@ public class Filters {
 		
 		//Validate Selected Metric Dropdown Elements for indicated pages
 		if (
-			(current_page == "Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Selected Metric Dropdown"
