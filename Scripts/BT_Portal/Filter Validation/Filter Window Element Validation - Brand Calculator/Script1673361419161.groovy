@@ -7,7 +7,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import btt_portal.*
 
 //***************************************************************************
-// Script Name: Filter Window Element Validation - Brand Analysis Page
+// Script Name: Filter Window Element Validation - Brand Calculator Page
 //
 // Script Overview: Opens a new browser window, then iterates page by page through the portal filter options to validate that the expected Filter Fields are present for the given user
 //
@@ -24,7 +24,7 @@ def error_found = false
 def test_object_path
 def failure_handling
 def element_name
-def current_page = "Brand Analysis"
+def current_page = "Brand Calculator"
 
 ///************************* Perform User Login ************************
 //Determine if login has already occurred by checking for presence of User menu button
@@ -32,9 +32,9 @@ def current_page = "Brand Analysis"
 	Login userLogin = new Login()
 	userLogin.login(user_name, user_password)
 
-///*********** Validate Brand Analysis Filter Fields ****************
+///*********** Validate Brand Calculator Filter Fields ****************
 
-//Navigate to the Brand Analysis page
+//Navigate to the Brand Calculator page
 Navigation menu = new Navigation()
 
 ///Only select Site if variable is populated
@@ -42,30 +42,29 @@ if (site_name > '') {
     menu.select_site(site_name)
 }
 
-///Open Brand Analysis Page and set the currentPage variable
-menu.select_menu_page('business-analytics-li', null, 'Brand Analysis')
+///Open Brand Calculator Page and set the currentPage variable
+menu.select_menu_page('business-analytics-li', null, 'Brand Calculator')
 
 //Close "No Brand Information" Info modal if it appears
 ///Check for OK button on dialog modal
-element_name = "Brand Access Modal popup"
+element_name = "Brand Calculator Modal popup"
 test_object_path = ('Object Repository/Brand Analysis/button_NoBrandAccessOK')
 error_found = element_check.validate_object_exists(element_name, test_object_path, 15 , failure_handling, error_found)
 
 ///If found, close the modal by clicking the "OK" buton
 if (error_found) {
 } else {
-	log.logInfo ('Brand Access Modal popup found')
+	log.logInfo ('Brand Calculator Modal popup found')
 	TestObject close_button = findTestObject('Object Repository/Brand Analysis/button_NoBrandAccessOK')
 	WebUI.click(close_button)
 }
-
 
 //Open Filters Menu
 Filters filtersWindow = new Filters()
 filtersWindow.open_filters_window(object_timeout)
 
 
-//Validate Brand Analysis Filter Sections
+//Validate Brand Calculator Filter Sections
 
 ///General Buttons
 filtersWindow.validate_filters_general_elements(current_page, object_timeout)
@@ -73,27 +72,26 @@ filtersWindow.validate_filters_general_elements(current_page, object_timeout)
 ///Saved Filters Elements
 filtersWindow.validate_filters_savedfilters_elements(current_page, object_timeout)
 
-///Brand Analysis Time Period Section Elements
+///Brand Calculator Time Period Section Elements
 filtersWindow.validate_filters_timeperiod_elements(current_page, object_timeout)
 
-//Brand Analysis Marketing Elements
+//Brand Calculator Marketing Elements
 filtersWindow.validate_filters_marketing_elements(current_page, object_timeout)
 
-//Brand Analysis Network Infrastructure Elements
+//Brand Calculator Network Infrastructure Elements
 filtersWindow.validate_filters_networkinfrastructure_elements(current_page, object_timeout)
 
-//Brand Analysis Page Segmentation Elements
+//Brand Calculator Page Segmentation Elements
 filtersWindow.validate_filters_pagesegmentation_elements(current_page, object_timeout)
 
-//Brand Analysis Browsers and Devices Elements
+//Brand Calculator Browsers and Devices Elements
 filtersWindow.validate_filters_browsers_and_devices_elements(current_page, object_timeout)
 
-//Brand Analysis Geography  Elements
+//Brand Calculator Geography  Elements
 filtersWindow.validate_filters_geography_elements(current_page, object_timeout)
 
-//Brand Analysis Advanced Elements
+//Brand Calculator Advanced Elements
 filtersWindow.validate_filters_advanced_elements(current_page, object_timeout)
-
 
 
 
