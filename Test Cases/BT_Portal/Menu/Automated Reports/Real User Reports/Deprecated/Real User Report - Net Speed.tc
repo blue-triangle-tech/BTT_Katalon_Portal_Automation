@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Real User Report - Net Speed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1f3f472-e1ef-448b-8326-48f4dd4226db</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e65bd794-8a98-47f8-8f0b-88b2b8183e58</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>72ef2613-fcf8-4706-ab64-537c90df1984</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>e65bd794-8a98-47f8-8f0b-88b2b8183e58</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>72ef2613-fcf8-4706-ab64-537c90df1984</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>

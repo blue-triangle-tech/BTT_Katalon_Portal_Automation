@@ -35,28 +35,40 @@ import btt_portal.*
 
 public class Login {
 
+	//***************** Object Definitions ********************\\
+	 
+	//Create Test Object Definitions - Page_Blue Triangle Sign In
 	TestObject input_username = findTestObject('Object Repository/Page_Blue Triangle Sign In/input_Username')
 	TestObject input_password = findTestObject('Object Repository/Page_Blue Triangle Sign In/input_Password')
 	TestObject login_button = findTestObject('Object Repository/Page_Blue Triangle Sign In/button_Sign In')
-
+	
+	//Create Test Object Definitions - Common Portal Elements
 	TestObject verify_login_successful = findTestObject('Object Repository/Common Portal Elements/button_menu')
 
+	
+	//***************** Function Library ********************\\
+
 	//***************************************************************************
-	 // Function Name: login
-	 //
-	 // Function Overview: Determine if browser window and user session is already open and logged in, if not then perform the browser opening and / or user login step
-	 //
-	 // Function Input Variable(s):
-	 //							element_name - text description of element being validated
-	 //							test_object  - reference to element object (set prior to function call)
-	 //							object_timeout - defined desired object wait timeout
-	 //							failure_handling - Outlines behavior if error is found (either FailureHandling.STOP_ON_FAILURE or FailureHandling.CONTINUE_ON_FAILURE
-	 //							error_found      - Flag for if an error is found [calling section should initialize this to zero at start]
-	 //
-	 // Function Output Variable(s): None
-	 //
-	 // Function Return Value: None
-	 //***************************************************************************
+	// Function Name: login
+	//
+	// Function Overview: Login to the Blue Triangle Portal
+	// 	Checks if the browser is currently open in order to not log in repeatedly between test cases
+	//		Opens the browser to the Blue Triangle Portal
+	//		Enters the username
+	//		Enters the password
+	//		Clicks the login button
+	// 	Verifies if the login is successful by checking for the menu button that only exists after logging in
+	//
+	// Function Input Variable(s):
+	//
+	// 	username (String, required) - The username of the account logging in
+	//		password (String, required) - The password of the account logging in (Please store the password as an account environment variable - System.getenv('BTT_Automation_Pass')
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
+
 
 	public void login(String username, String password) {
 
@@ -78,9 +90,37 @@ public class Login {
 
 			WebUI.click(login_button)
 
-			//WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
+			WebUI.verifyElementPresent(verify_login_successful, 3, FailureHandling.STOP_ON_FAILURE)
 		}
 	}
+
+
+	//***************************************************************************
+	// Function Name: chrome_profile_login
+	//
+	// Function Overview: Login to the Blue Triangle Portal using your Chrome profile history
+	// 	Checks if the browser is currently open in order to not log in repeatedly between test cases
+	// 	Gets the path to the chrome driver
+	//		Sets the chrome driver path
+	// 	Gets the chrome profile path from environment variables - must set your chrome profile path in account environment variables
+	// 	Sets the chrome profile path
+	//		Creates a new driver
+	//		Opens the browser to the Blue Triangle Portal with your profile history
+	//		Enters the username
+	//		Enters the password
+	//		Clicks the login button
+	// 	Verifies if the login is successful by checking for the menu button that only exists after logging in
+	//
+	// Function Input Variable(s):
+	//
+	// 	username (String, required) - The username of the account logging in
+	//		password (String, required) - The password of the account logging in (Please store the password as an account environment variable - System.getenv('BTT_Automation_Pass')
+	//		profile_path (String, required) - Please store your chrome profile path as an environment variable for your account - System.getenv('Chrome_Profile_Path')
+	//
+	// Function Output Variable(s): None
+	//
+	// Function Return Value: None
+	//***************************************************************************
 	public void chrome_profile_login(String username, String password, String profile_path) {
 
 		String pathToChromeDriver = DriverFactory.getChromeDriverPath()

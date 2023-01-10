@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Real User Report - Include Screenshot</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b952003f-59fb-4798-bb33-867f380a7efe</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>edc4b2ec-f998-4b5f-9ffb-e5440685faf3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>906567e3-9064-4bb1-ac26-cc96ba1a1960</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'GDC Test Site 1'</defaultValue>
+      <description></description>
+      <id>edc4b2ec-f998-4b5f-9ffb-e5440685faf3</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+   <variable>
+      <defaultValue>'qa.dptadmin1'</defaultValue>
+      <description></description>
+      <id>906567e3-9064-4bb1-ac26-cc96ba1a1960</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+</TestCaseEntity>
