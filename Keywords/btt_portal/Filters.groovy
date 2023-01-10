@@ -131,9 +131,9 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Beacon Type Dropdown Elements for indicated page(s) [Dashboards, ]
+		//Validate Beacon Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards")
+		(current_page == "Dashboards") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Beacon Type Dropdown"
@@ -147,7 +147,7 @@ public class Filters {
 
 		}
 
-		//Validate Conversion Type Dropdown Elements for indicated page(s) [Broken Links, Out of Stock ]
+		//Validate Conversion Type Dropdown Elements for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock")
 
@@ -157,20 +157,20 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		}
-		
-		//Validate Granularity Dropdown Elements for indicated page(s) [Revenue Calculator, Brand Calculator]
+
+		//Validate Granularity Dropdown Elements for indicated pages
 		if (
-			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Granularity"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Business Pages/dropdown_Granularity')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
-		
-		//Validate Performance Metric Dropdown Elements for indicated page(s) [Revenue Calculator, Brand Calculator]
+
+		//Validate Performance Metric Dropdown Elements for indicated pages
 		if (
-			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Performance Metric"
@@ -178,9 +178,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Net Speed Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator]
+		//Validate Net Speed Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator") || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview")
 
 		) {
 			element_name = "Net Speed Dropdown"
@@ -193,11 +194,11 @@ public class Filters {
 
 
 		}
-		
-		
-		//Validate Discard Sessions Over Dropdown Elements for indicated page(s) [Revenue Calculator, Brand Calculator]
+
+
+		//Validate Discard Sessions Over Dropdown Elements for indicated pages
 		if (
-			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Discard Sessions Over"
@@ -232,9 +233,10 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Common Buttons for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Common Buttons for indicated pages
 		if (
-		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			///Buttons Validation
@@ -253,9 +255,10 @@ public class Filters {
 
 		}
 
-		//Validate Common Devices Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Common Devices Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 
@@ -274,9 +277,10 @@ public class Filters {
 
 		}
 
-		//Validate Common Operating Systems Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Common Operating Systems Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 
@@ -303,9 +307,10 @@ public class Filters {
 
 		}
 
-		//Validate Common Browsers Elements for indicated page(s) [Broken Links, Out of Stock, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Common Browsers Elements for indicated pages
 		if (
-		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 
@@ -332,9 +337,10 @@ public class Filters {
 
 		}
 
-		//Validate Browser/OS/Browser Version Dropdown for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Browser/OS/Browser Version Dropdown for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 
@@ -348,9 +354,10 @@ public class Filters {
 
 		}
 
-		//Validate Bot Traffic Radios for indicated page(s) [Revenue Analysis, Brand Analysis, ]
+		//Validate Bot Traffic Radios for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") 
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") |
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Include Bots Radio"
@@ -443,7 +450,7 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Display Options Dropdown Elements for indicated page(s) [Broken Links, Out of Stock ]
+		//Validate Display Options Dropdown Elements for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock")
 
@@ -490,11 +497,11 @@ public class Filters {
 		test_object_path = 'Object Repository/Filters/Main Filter Window/General Items/SavedFilters/button_SavedFilters'
 		error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
-		//Validate Apply Filters Button (Note that Dashboards uses a different identifier value for the Apply button)
+		//Validate Apply Filters Button (Note that a few pages use a different identifier value for the Apply button)
 		element_name = "General Filter Apply Filters Button"
 		test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Dashboards/button_Apply_Dashboard_Page'
 
-		if (current_page == "Dashboards") {
+		if ((current_page == "Dashboards") || (current_page == "My Campaigns")) {
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Specific/Dashboards/button_Apply_Dashboard_Page'
 			element_name = "currentPage = Dashboards"
 		} else {
@@ -540,9 +547,10 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Country Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Country Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Country Dropdown"
@@ -554,9 +562,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Region for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Region for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Region Dropdown"
@@ -593,9 +602,10 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Traffic Source / Referrer Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator]
+		//Validate Traffic Source / Referrer Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
@@ -607,9 +617,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Traffic Medium Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator]
+		//Validate Traffic Medium Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -621,9 +632,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Campaign Name Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator]
+		//Validate Campaign Name Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Campaign Name Dropdown"
@@ -635,9 +647,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate A/B Testing Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate A/B Testing Segment Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -649,9 +662,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Visitor Type Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator]
+		//Validate Visitor Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -688,9 +702,10 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Datacenter Location Dropdown Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator] ]
+		//Validate Datacenter Location Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -707,9 +722,10 @@ public class Filters {
 			KeywordUtil.markFailed ("Issue found in validate_filters_networkinfrastructure_elements section, please check error log for details")
 		}
 
-		//Validate ISP / Organization Location Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator] ]
+		//Validate ISP / Organization Location Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "ISP / Organization Dropdown"
@@ -747,9 +763,10 @@ public class Filters {
 		//Initialize error tracking variable
 		error_found = false
 
-		//Validate Traffic Segment Dropdown Elements for indicated page(s) [Dashboards, Broken Links, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Traffic Segment Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -761,9 +778,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
 
-		//Validate Content / Page Groups Elements for indicated page(s) [Dashboards, Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Content / Page Groups Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
 
 		) {
 			element_name = "Content / Page Groups Dropdown"
@@ -774,15 +792,24 @@ public class Filters {
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/link_PageGroup_Clear'
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
-		
-		//Validate Page Name Elements for indicated page(s) [Revenue Calculator, Brand Calculator ]
+
+		//Validate Page Name Elements for indicated pages
 		if (
-			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
-			
+		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator") || (current_page == "Marketing Overview") || (current_page == "My Campaigns")
+
 		) {
 			element_name = "Page Name Dropdown"
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/dropdown_PageName'
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			
+			//Bypass Clear Link check for Brand Calculator page
+			if (current_page == "Brand Calculator") {
+				
+			} else {
+				element_name = "Page Name Clear Link"
+				test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/link_PageName_Clear'
+				error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+			}
 
 		}
 
@@ -1001,9 +1028,9 @@ public class Filters {
 		//Close Timeperiod Section
 		TestObject Cancel_Button = findTestObject('Object Repository/Filters/Main Filter Window/Time Period/icon_TimePeriod_DateSelector')
 		WebUI.click(time_period_icon)
-		
 
-		//Validate Data Type Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+
+		//Validate Data Type Dropdown Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
 
@@ -1013,10 +1040,10 @@ public class Filters {
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
 		}
-		
-		//Validate Timezone Dropdown Element for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+
+		//Validate Timezone Dropdown Element for indicated pages
 		if (
-			(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
+		(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "TimeZone Dropdown"
@@ -1025,7 +1052,7 @@ public class Filters {
 
 		}
 
-		//Validate Bucket Size Dropdown Elements for indicated page(s) [Revenue Analysis, Brand Analysis, Revenue Calculator, Brand Calculator ]
+		//Validate Bucket Size Dropdown Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator")
 

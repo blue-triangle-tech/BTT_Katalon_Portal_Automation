@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "3F1178CEF4BB8A898EEFFDBDF57F845D",
+  "keywordFileContentHash": "2FEB2BB8175A4C7AA2BB4D4306CAE321",
   "keywordClasses": [
     {
       "name": "btt_portal.Filters",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
