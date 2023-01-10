@@ -133,7 +133,7 @@ public class Filters {
 
 		//Validate Beacon Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Dashboards") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Dashboards") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis")
 
 		) {
 			element_name = "Beacon Type Dropdown"
@@ -149,7 +149,7 @@ public class Filters {
 
 		//Validate Conversion Type Dropdown Elements for indicated pages
 		if (
-		(current_page == "Broken Links") || (current_page == "Out of Stock")
+			(current_page == "Broken Links") || (current_page == "Out of Stock")
 
 		) {
 			element_name = "Conversion Type Dropdown"
@@ -160,7 +160,7 @@ public class Filters {
 
 		//Validate Granularity Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Granularity"
@@ -170,18 +170,29 @@ public class Filters {
 
 		//Validate Performance Metric Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Performance Metric"
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Business Pages/dropdown_PerformanceMetric')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
+		
+		//Validate Statistical Method Dropdown Elements for indicated pages
+		if (
+			(current_page == "RUM Web Browser Performance Overview")
+
+		) {
+			element_name = "Statistical Method Dropdown"
+			test_object_path = ('Object Repository/Filters/Main Filter Window/Advanced/dropdown_StatisticalMethod')
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+		}
 
 		//Validate Net Speed Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator") || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview")
+			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator") || (current_page == "Brand Calculator") ||
+			(current_page == "Marketing Overview") || 
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Net Speed Dropdown"
@@ -197,7 +208,7 @@ public class Filters {
 
 		//Validate Discard Sessions Over Dropdown Elements for indicated pages
 		if (
-		(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
+			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator")
 
 		) {
 			element_name = "Discard Sessions Over Dropdown"
@@ -207,7 +218,7 @@ public class Filters {
 		
 		//Validate Customer Journey Specific Elements for indicated pages
 		if (
-		(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
 
 		) {
 			element_name = "Maximum Exit Rate Threshold Input"
@@ -226,6 +237,8 @@ public class Filters {
 			test_object_path = ('Object Repository/Filters/Main Filter Window/Page Specific/Customer Journey Analysis Pages/dropdown_Remainder')
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
+		
+
 
 		//Perform Error Check Validation
 		if (error_found) {
@@ -257,7 +270,8 @@ public class Filters {
 		//Validate Common Buttons for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			///Buttons Validation
@@ -279,7 +293,8 @@ public class Filters {
 		//Validate Common Devices Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 
@@ -301,7 +316,8 @@ public class Filters {
 		//Validate Common Operating Systems Elements for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 
@@ -331,7 +347,8 @@ public class Filters {
 		//Validate Common Browsers Elements for indicated pages
 		if (
 		(current_page == "Broken Links") || (current_page == "Out of Stock") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 
@@ -361,7 +378,8 @@ public class Filters {
 		//Validate Browser/OS/Browser Version Dropdown for indicated pages
 		if (
 		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 
@@ -377,8 +395,9 @@ public class Filters {
 
 		//Validate Bot Traffic Radios for indicated pages
 		if (
-		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") |
-		(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+		(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") ||
+		(current_page == "Marketing Overview") || (current_page == "My Campaigns") ||
+		(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Include Bots Radio"
@@ -581,7 +600,8 @@ public class Filters {
 		//Validate Country Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Country Dropdown"
@@ -596,7 +616,8 @@ public class Filters {
 		//Validate Region for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Region Dropdown"
@@ -646,8 +667,8 @@ public class Filters {
 		//Validate Traffic Source / Referrer Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
-
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 		) {
 			element_name = "Traffic Source / Referrer Dropdown"
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Marketing/dropdown_TrafficSource'
@@ -661,7 +682,8 @@ public class Filters {
 		//Validate Traffic Medium Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Traffic Medium Dropdown"
@@ -676,7 +698,8 @@ public class Filters {
 		//Validate Campaign Name Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Campaign Name Dropdown"
@@ -691,7 +714,8 @@ public class Filters {
 		//Validate A/B Testing Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "A/B Testing Segment Dropdown"
@@ -706,7 +730,8 @@ public class Filters {
 		//Validate Visitor Type Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Visitor Type Dropdown"
@@ -746,7 +771,8 @@ public class Filters {
 		//Validate Datacenter Location Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Datacenter Location Dropdown"
@@ -766,7 +792,8 @@ public class Filters {
 		//Validate ISP / Organization Location Dropdown Elements for indicated pages
 		if (
 			(current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") |
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "ISP / Organization Dropdown"
@@ -807,7 +834,8 @@ public class Filters {
 		//Validate Traffic Segment Dropdown Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Broken Links") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") || (current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Traffic Segment Dropdown"
@@ -822,7 +850,8 @@ public class Filters {
 		//Validate Content / Page Groups Elements for indicated pages
 		if (
 			(current_page == "Dashboards") || (current_page == "Revenue Analysis") || (current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Marketing Overview") || (current_page == "My Campaigns") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Content / Page Groups Dropdown"
@@ -833,10 +862,21 @@ public class Filters {
 			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/link_PageGroup_Clear'
 			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 		}
+		
+		//Validate Filter Selector Elements for indicated pages
+		if (
+			(current_page == "RUM Web Browser Performance Overview")
+		) {
+			element_name = "Filter Selector Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/dropdown_FilterSelector'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
 
+		}
+		
 		//Validate Page Name Elements for indicated pages
 		if (
-			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator") || (current_page == "Marketing Overview") || (current_page == "My Campaigns")
+			(current_page == "Revenue Calculator") || (current_page == "Brand Calculator") || (current_page == "Marketing Overview") || (current_page == "My Campaigns") |
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "Page Name Dropdown"
@@ -853,6 +893,17 @@ public class Filters {
 			}
 
 		}
+		
+		//Validate Remove URL Params Elements for indicated pages
+		if (
+			(current_page == "RUM Web Browser Performance Overview")
+		) {
+			element_name = "Remove URL Params Dropdown"
+			test_object_path = 'Object Repository/Filters/Main Filter Window/Page Segmentation/dropdown_RemoveURLParams'
+			error_found = element_check.validate_object_exists(element_name, test_object_path, object_timeout, failure_handling, error_found)
+
+		}
+		
 		
 		//Validate Customer Journey Specific Dropdown Elements for indicated pages
 		if (
@@ -1128,7 +1179,8 @@ public class Filters {
 		//Validate Timezone Dropdown Element for indicated pages
 		if (
 			(current_page == "Brand Analysis") || (current_page == "Revenue Calculator")  || (current_page == "Brand Calculator") ||
-			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis")
+			(current_page == "Customer Journey Analysis") || (current_page == "Brand Customer Journey Analysis") || (current_page == "Bottom of the Sales Funnel Analysis") ||
+			(current_page == "RUM Web Browser Performance Overview")
 
 		) {
 			element_name = "TimeZone Dropdown"
